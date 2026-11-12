@@ -1,0 +1,3081 @@
+<!DOCTYPE html>
+
+<html lang="vi" class="scroll-smooth">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Dấu chân thời đại - Hành Trình Tìm Đường Cứu Nước & Di Sản Bác Hồ</title>
+
+
+
+  <!-- Tailwind CSS CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <!-- Google Fonts: Playfair Display, Merriweather, Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Font Awesome Icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <script>
+
+    tailwind.config = {
+
+      theme: {
+
+        extend: {
+
+          colors: {
+
+            crimson: {
+
+              DEFAULT: '#8B1E1E',
+
+              dark: '#5B1111',
+
+              light: '#AC2D2D',
+
+              deep: '#3E0B0B'
+
+            },
+
+            gold: {
+
+              DEFAULT: '#D4AF37',
+
+              light: '#F5E7B2',
+
+              dark: '#9A7B1C',
+
+              bronze: '#C5A059'
+
+            },
+
+            parchment: {
+
+              50: '#FDFCF7',
+
+              100: '#F7F3EA',
+
+              200: '#EFE7DA',
+
+              300: '#DFD3C0',
+
+              800: '#3D342A'
+
+            },
+
+            ink: {
+
+              DEFAULT: '#1E1B18',
+
+              soft: '#3B3632',
+
+              light: '#6E6760'
+
+            }
+
+          },
+
+          fontFamily: {
+
+            display: ['Playfair Display', 'serif'],
+
+            serif: ['Merriweather', 'serif'],
+
+            sans: ['"Be Vietnam Pro"', 'sans-serif']
+
+          }
+
+        }
+
+      }
+
+    }
+
+  </script>
+
+
+  <style>
+    /* Texture nền giấy dó cổ & hiệu ứng hoài niệm */
+
+    body {
+
+      background-color: #F7F3EA;
+
+      background-image:
+
+        radial-gradient(#C5A059 0.75px, transparent 0.75px),
+
+        radial-gradient(#C5A059 0.75px, #F7F3EA 0.75px);
+
+      background-size: 30px 30px;
+
+      background-position: 0 0, 15px 15px;
+
+      color: #1E1B18;
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+    }
+
+
+    /* Hiệu ứng viền vàng hoàng kim cổ điển */
+
+    .gold-border {
+
+      border: 1px solid rgba(212, 175, 55, 0.4);
+
+      box-shadow: 0 4px 20px -2px rgba(139, 30, 30, 0.08), inset 0 0 0 1px rgba(212, 175, 55, 0.2);
+
+    }
+
+
+    .gold-gradient-text {
+
+      background: linear-gradient(135deg, #D4AF37 0%, #FFF3B3 50%, #C5A059 100%);
+
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+
+    }
+
+
+    .crimson-gradient-bg {
+
+      background: linear-gradient(145deg, #8B1E1E 0%, #5B1111 100%);
+
+    }
+
+
+    /* Tùy biến thanh cuộn cổ điển */
+
+    ::-webkit-scrollbar {
+
+      width: 8px;
+
+    }
+
+    ::-webkit-scrollbar-track {
+
+      background: #EFE7DA;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+      background: #8B1E1E;
+
+      border-radius: 4px;
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+
+      background: #5B1111;
+
+    }
+
+
+    /* Hiệu ứng kính lúp cho kho hiện vật */
+
+    .loupe-container {
+
+      position: relative;
+
+      overflow: hidden;
+
+      cursor: crosshair;
+
+    }
+
+
+    /* Con dấu đỏ bảo tàng */
+    .museum-seal {
+      width: 72px;
+      height: 72px;
+      border: 3px double #8B1E1E;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #8B1E1E;
+      font-family: 'Playfair Display', serif;
+      /* Thay ở đây */
+      font-weight: 700;
+      font-size: 9px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      transform: rotate(-12deg);
+      opacity: 0.85;
+      user-select: none;
+    }
+
+
+    /* Hiệu ứng máy chữ */
+
+    .typewriter-paper {
+
+      background-color: #FFFDF9;
+
+      background-image: repeating-linear-gradient(#F7F3EA 0px, #F7F3EA 24px, #E5DCce 25px);
+
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05), 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+
+    }
+  </style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col selection:bg-crimson selection:text-gold-light">
+
+
+  <!-- ======================================================== -->
+
+  <!-- 1. HEADER / THANH ĐIỀU HƯỚNG CỐ ĐỊNH                     -->
+
+  <!-- ======================================================== -->
+
+  <header
+    class="sticky top-0 z-50 bg-[#3E0B0B]/95 backdrop-blur-md border-b border-gold/30 text-parchment-100 transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+
+
+      <!-- Logo thương hiệu -->
+
+      <a href="#hero" class="flex items-center space-x-3 group">
+
+        <div
+          class="w-12 h-12 rounded-full border border-gold/60 flex items-center justify-center bg-crimson-dark/80 group-hover:border-gold transition-colors">
+
+          <i class="fa-solid fa-anchor text-gold text-lg"></i>
+
+        </div>
+
+        <div>
+
+          <span
+            class="block font-display font-bold text-base sm:text-lg tracking-wider text-parchment-50 leading-tight">Hồ
+            Chí Minh</span>
+
+          <span class="block text-[10px] sm:text-xs text-gold-bronze uppercase tracking-widest font-sans">Triển Lãm Số
+            Di Sản Hồ Chí Minh</span>
+
+        </div>
+
+      </a>
+
+
+
+ 
+     <!-- Menu Điều hướng Màn hình lớn -->
+      <nav class="hidden lg:flex items-center space-x-6 text-xs xl:text-sm font-medium tracking-wide">
+        <a href="#biography" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Tiểu Sử</a>
+        <a href="#odyssey" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Hoạt Động Cách Mạng</a>
+        <a href="#global" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Dấu Ấn Trong Lòng Thế Giới</a>
+        
+        <!-- Thêm mới nút Dấu Ấn Việt Nam -->
+        <a href="#vietnam" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Dấu Ấn Trong Lòng Việt Nam</a>
+        
+        <a href="#workshop" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Phòng Thực Hành</a>
+        <a href="#pledge" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Thông Điệp Trẻ</a>
+      </nav>
+
+
+      <!-- Các công cụ: Âm thanh & Menu Mobile -->
+
+      <div class="flex items-center space-x-3">
+
+        <!-- Nút bật/tắt Web Audio Ambient -->
+
+        <button id="audioToggleBtn" onclick="toggleAudio()"
+          class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-gold/40 bg-crimson hover:bg-crimson-light text-parchment-100 text-xs transition shadow-md active:scale-95"
+          title="Bật âm thanh không gian bảo tàng">
+
+          <i id="audioIcon" class="fa-solid fa-volume-xmark text-gold"></i>
+
+          <span id="audioText" class="hidden sm:inline">Âm thanh bảo tàng</span>
+
+        </button>
+
+
+        <!-- Nút Menu Mobile Hamburger -->
+
+        <button onclick="toggleMobileMenu()"
+          class="lg:hidden p-2 rounded-md text-gold hover:text-white focus:outline-none" aria-label="Mở menu">
+
+          <i class="fa-solid fa-bars text-xl"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+   <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-crimson-deep border-b border-gold/30 px-4 pt-2 pb-5 space-y-3 text-sm">
+      <a href="#biography" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold border-b border-white/5"> Tiểu Sử Anh Hùng</a>
+      <a href="#odyssey" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold border-b border-white/5">Sự Nghiệp Cách Mạng</a>
+      <a href="#global" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold border-b border-white/5">Dấu Ấn Trong Lòng Thế Giới</a>
+      
+      <!-- Thêm mới nút Dấu Ấn Việt Nam cho mobile -->
+      <a href="#vietnam" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold border-b border-white/5">Dấu Ấn Trong Lòng Việt Nam </a>
+      
+      <a href="#workshop" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold border-b border-white/5">Trải nghiệm trực quan</a>
+      <a href="#pledge" onclick="toggleMobileMenu()" class="block py-2 text-parchment-100 hover:text-gold">Gửi Thông Điệp Khát Vọng</a>
+    </div>
+
+  </header>
+
+
+
+    <!-- ======================================================== -->
+  <!-- 2. HERO SECTION: BẾN NHÀ RỒNG & NGƯỜI ĐI TÌM HÌNH CỦA NƯỚC -->
+  <!-- ======================================================== -->
+  <section id="hero"
+    class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 bg-gradient-to-b from-[#3E0B0B] via-crimson to-parchment-100 text-parchment-100">
+
+    <!-- Cụm ảnh nền in mờ (Chỉ giữ lại ảnh nền lớn) -->
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <!-- Ảnh lớn trung tâm mờ -->
+      <div class="absolute inset-0 opacity-[0.15] mix-blend-luminosity" 
+           style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Ho_Chi_Minh_1950.jpg'); background-size: cover; background-position: center 15%; background-repeat: no-repeat; mask-image: linear-gradient(to bottom, black 50%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);">
+      </div>
+    </div>
+
+    <!-- Họa tiết chìm kiến trúc Bến Nhà Rồng & Sóng nước -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center z-0">
+      <svg class="w-full h-full max-w-6xl" viewBox="0 0 1000 500" fill="currentColor">
+        <path d="M50 450 Q 250 420 500 450 T 950 450 L 950 500 L 50 500 Z"></path>
+        <rect x="250" y="220" width="500" height="180" rx="6"></rect>
+        <polygon points="230,220 500,120 770,220"></polygon>
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto space-y-6">
+
+        <!-- Chân dung Hồ Chí Minh viền vàng nổi bật (Đã phóng to đáng kể) -->
+        <div class="relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 mx-auto mb-10 group">
+          <!-- Hiệu ứng viền vàng tỏa sáng -->
+          <div class="absolute inset-0 rounded-full border-4 border-gold/40 animate-ping opacity-50"></div>
+          <div class="absolute inset-0 rounded-full border-2 border-gold/80 shadow-[0_0_60px_rgba(212,175,55,0.7)]"></div>
+          <!-- Ảnh chân dung chính -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Ho_Chi_Minh_1946.jpg" alt="Chân dung Chủ tịch Hồ Chí Minh" 
+               class="w-full h-full object-cover rounded-full border-[5px] border-gold relative z-10 filter contrast-110 sepia-[0.1] transition-transform duration-700 group-hover:scale-105 shadow-2xl">
+        </div>
+
+        <!-- Nhãn dự án đồng hành Infographic -->
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-black/30 backdrop-blur-sm border border-gold/40 text-gold-light text-xs font-semibold uppercase tracking-widest shadow-inner">
+          <i class="fa-solid fa-compass text-gold"></i>
+          <span>Dự Án Đồng Hành Infographic Lịch Sử</span>
+        </div>
+
+        <!-- Tiêu đề hoành tráng -->
+        <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-tight text-white drop-shadow-md">
+          Hồ Chí Minh
+          <span class="block text-xl sm:text-2xl lg:text-3xl font-serif italic font-normal text-gold-light mt-3">
+            Anh Hùng Giải Phóng Dân Tộc
+          </span>
+        </h1>
+
+        <!-- Trích dẫn kinh điển của Bác -->
+        <div class="p-4 sm:p-6 rounded-2xl bg-black/40 backdrop-blur-md border-l-4 border-gold text-parchment-100 text-sm sm:text-base font-serif italic text-left relative shadow-2xl">
+          <i class="fa-solid fa-quote-left absolute -top-3 left-4 text-gold text-2xl opacity-70"></i>
+          "Tự do cho đồng bào tôi, độc lập cho Tổ quốc tôi, đấy là tất cả những điều tôi muốn; đấy là tất cả những điều tôi hiểu."
+          <span class="block text-right text-gold-light font-sans not-italic text-xs mt-2 font-medium">— Nguyễn Ái Quốc, Paris 1923</span>
+        </div>
+
+        <!-- Khối thống kê dữ liệu đinh của Infographic (Key Metrics) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+          <div class="p-4 rounded-xl bg-black/30 backdrop-blur-sm border border-gold/30 text-center shadow-lg">
+            <span class="block font-display font-bold text-3xl sm:text-4xl text-gold">30</span>
+            <span class="text-xs text-parchment-200 uppercase tracking-wider">Năm Bôn Ba (1911 - 1941)</span>
+          </div>
+          <div class="p-4 rounded-xl bg-black/30 backdrop-blur-sm border border-gold/30 text-center shadow-lg">
+            <span class="block font-display font-bold text-3xl sm:text-4xl text-gold">03</span>
+            <span class="text-xs text-parchment-200 uppercase tracking-wider">Đại Dương Đã Vượt</span>
+          </div>
+          <div class="p-4 rounded-xl bg-black/30 backdrop-blur-sm border border-gold/30 text-center shadow-lg">
+            <span class="block font-display font-bold text-3xl sm:text-4xl text-gold">04</span>
+            <span class="text-xs text-parchment-200 uppercase tracking-wider">Châu Lục In Dấu Chân</span>
+          </div>
+          <div class="p-4 rounded-xl bg-black/30 backdrop-blur-sm border border-gold/30 text-center shadow-lg">
+            <span class="block font-display font-bold text-3xl sm:text-4xl text-gold">~30</span>
+            <span class="text-xs text-parchment-200 uppercase tracking-wider">Quốc Gia & Vùng Lãnh Thổ</span>
+          </div>
+        </div>
+
+        <!-- Nút hành động CTA -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#odyssey"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold-bronze text-crimson-deep font-display font-bold text-sm tracking-wider uppercase shadow-xl hover:shadow-gold/40 hover:-translate-y-0.5 transition-all text-center">
+            Theo Dấu Chân Người <i class="fa-solid fa-arrow-down ml-2"></i>
+          </a>
+          <a href="#workshop"
+            class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-crimson-deep/80 backdrop-blur-sm hover:bg-crimson-deep border border-gold/50 text-gold-light font-sans font-semibold text-sm tracking-wide transition text-center">
+            <i class="fa-solid fa-hands text-gold mr-2"></i> Trải Nghiệm Khám Phá
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+ <!-- ======================================================== -->
+  <!-- 2B. PHẦN I: TIỂU SỬ CHỦ TỊCH HỒ CHÍ MINH                 -->
+  <!-- ======================================================== -->
+  <section id="biography" class="py-20 bg-white border-b border-parchment-300 relative">
+    <!-- Họa tiết nền mờ -->
+    <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+      <i class="fa-solid fa-book-open text-[200px] text-crimson"></i>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Tiêu đề & Trích dẫn -->
+      <div class="text-center max-w-4xl mx-auto space-y-5 mb-12">
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-gold-dark">Giới thiệu</span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl text-crimson-dark">Tiểu sử Chủ tịch Hồ Chí Minh</h2>
+        
+        <div class="p-6 bg-parchment-100 rounded-2xl border border-gold/40 shadow-inner">
+          <blockquote class="font-display italic font-bold text-2xl sm:text-3xl text-crimson mb-3">
+            “Không có gì quý hơn độc lập, tự do”
+          </blockquote>
+          <cite class="text-[10px] sm:text-xs text-ink-light font-sans block not-italic">
+            Nguồn: Hồ Chí Minh, “Lời kêu gọi đồng bào và chiến sĩ cả nước” (17/7/1966), Hồ Chí Minh Toàn tập, tập 15, NXB Chính trị quốc gia Sự thật.
+          </cite>
+        </div>
+      </div>
+
+      <!-- Nội dung chia 2 cột -->
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Cột Trái: Thông tin cơ bản (Hồ sơ) -->
+        <div class="lg:col-span-5 bg-[#EFE7DA] p-6 rounded-2xl gold-border shadow-md">
+          <div class="flex items-center space-x-2 pb-3 border-b border-gold/30 mb-4">
+            <i class="fa-solid fa-id-card text-crimson text-lg"></i>
+            <h3 class="font-serif font-bold text-lg text-ink">1. Thông tin cơ bản</h3>
+          </div>
+          <ul class="space-y-4 text-xs sm:text-sm font-sans text-ink-soft">
+            <li><strong class="text-ink">Tên khai sinh:</strong> Nguyễn Sinh Cung</li>
+            <li><strong class="text-ink">Tên thời niên thiếu:</strong> Nguyễn Tất Thành</li>
+            <li><strong class="text-ink">Tên gọi khác:</strong> Nguyễn Ái Quốc, Hồ Chí Minh</li>
+            <li><strong class="text-ink">Ngày sinh:</strong> 19/5/1890 — <strong class="text-ink">Ngày mất:</strong> 2/9/1969</li>
+            <li><strong class="text-ink">Quê quán:</strong> Làng Kim Liên, huyện Nam Đàn, tỉnh Nghệ An</li>
+            <li><strong class="text-ink">Thân phụ:</strong> Nguyễn Sinh Sắc<br><strong class="text-ink">Thân mẫu:</strong> Hoàng Thị Loan</li>
+            <li><strong class="text-ink">Nghề nghiệp:</strong> Nhà cách mạng, nhà chính trị, nhà văn, nhà thơ</li>
+            <li><strong class="text-ink">Chức vụ tiêu biểu:</strong> Chủ tịch nước Việt Nam Dân chủ Cộng hòa</li>
+            <li><strong class="text-ink">Vai trò:</strong> Lãnh tụ của cách mạng Việt Nam, người sáng lập Đảng Cộng sản Việt Nam</li>
+            <li><strong class="text-ink">Danh hiệu:</strong> Anh hùng giải phóng dân tộc, Danh nhân văn hóa thế giới</li>
+          </ul>
+        </div>
+
+
+
+        <!-- Cột Phải: Tiểu sử chi tiết -->
+        <div class="lg:col-span-7 space-y-6 text-sm sm:text-base leading-relaxed text-ink-soft font-serif">
+          <div>
+            <h3 class="font-bold text-xl text-crimson font-serif mb-3 border-b border-parchment-300 pb-2">2. Tiểu sử chi tiết</h3>
+            <p class="mb-3">
+              <span class="float-left text-4xl font-bold leading-none pr-2 pt-1 font-display text-crimson">B</span>ác Hồ sinh ngày 19/5/1890, mất ngày 2/9/1969. Người là nhà cách mạng, người sáng lập Đảng Cộng sản Việt Nam, một trong những người đặt nền móng và lãnh đạo công cuộc đấu tranh giành độc lập, toàn vẹn lãnh thổ cho Việt Nam trong thế kỷ 20, một chiến sĩ cộng sản quốc tế.
+            </p>
+            <p>Bác Hồ sinh ra trong một gia đình nhà Nho nghèo ở làng Sen (hay làng Kim Liên), xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An.</p>
+          </div>
+
+          <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+            <h4 class="font-bold text-ink mb-1"><i class="fa-solid fa-user-tie text-gold-dark mr-1"></i> Thân phụ</h4>
+            <p class="text-xs sm:text-sm">Cụ Phó bảng Nguyễn Sinh Sắc (1862 – 1929). Ông đỗ cử nhân năm 1894 và Phó bảng năm 1901. Năm 1906, ông được triều đình bổ nhiệm chức Thừa biện bộ Lễ; năm 1909, ông nhậm chức Tri huyện Bình Khê tỉnh Bình Định. Làm quan được ít lâu thì bị triều đình thải hồi vì một “tên cường hào” bị ông bắt giam rồi chết sau khi thả ra hai tháng. Sau đó ông đi vào miền Nam và sống một cuộc đời thanh bạch tại Làng Hòa An, Cao Lãnh, Đồng Tháp cho đến cuối đời.</p>
+          </div>
+
+          <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+            <h4 class="font-bold text-ink mb-1"><i class="fa-solid fa-person-breastfeeding text-gold-dark mr-1"></i> Thân mẫu</h4>
+            <p class="text-xs sm:text-sm">Bà Hoàng Thị Loan (1868-1901). Bà là một hình mẫu cho hình ảnh người Việt Nam hiền hậu và hết lòng vì chồng con. Ở kinh thành Huế, bà đã lao động dệt vải vất vả một tay nuôi sống cả gia đình. Năm 1900, sự vất vả khó nhọc trước đó khiến bà sinh bệnh rồi qua đời vào ngày 10/2/1901. Năm 1985, nhân dân và chính quyền địa phương xây dựng tại núi Động Tranh (Nghệ An) một khu lăng mộ trang trọng dành cho bà.</p>
+          </div>
+
+          <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+            <h4 class="font-bold text-ink mb-2"><i class="fa-solid fa-people-roof text-gold-dark mr-1"></i> Các anh chị em của Bác Hồ</h4>
+            <ul class="list-disc list-inside text-xs sm:text-sm space-y-1 ml-1">
+              <li><strong class="text-ink">Nguyễn Thị Thanh (1884 – 1954):</strong> Người chị cả, hiệu là Bạch Liên nữ sĩ.</li>
+              <li><strong class="text-ink">Nguyễn Sinh Khiêm (1888 – 1950):</strong> Con thứ hai, gọi là Cả Khiêm, tên tự là Tất Đạt.</li>
+              <li><strong class="text-ink">Nguyễn Sinh Nhuận (1900 – 1901):</strong> Tên khai sinh là Nguyễn Sinh Xin, là con trai út trong gia đình.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+
+ <!-- ======================================================== -->
+  <!-- 3. HÀNH TRÌNH "NGƯỜI ĐI TÌM HÌNH CỦA NƯỚC"                -->
+  <!-- ======================================================== -->
+  <section id="odyssey" class="py-20 bg-parchment-100 border-t border-b border-parchment-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-4xl mx-auto mb-12 space-y-3">
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-crimson">Những bước đi lịch sử</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-crimson-dark">Hành Trình "Người Tìm Hình Của Nước"</h2>
+        <div class="w-24 h-1 bg-gold mx-auto"></div>
+        <p class="text-xs sm:text-sm text-ink-soft leading-relaxed italic mt-2">
+          "Cách đây 111 năm (ngày 5-6-1911), người thanh niên yêu nước Nguyễn Tất Thành đã lên con tàu Amiral Latouche Tréville, từ Bến cảng Nhà Rồng đi Marseille (Pháp) với ý chí mãnh liệt và hoài bão sẽ tìm được con đường cứu nước, giải phóng nhân dân khỏi ách nô lệ của thực dân, đế quốc."
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+
+       <!-- Cột Bên Trái: Canvas Bản Đồ Hải Trình Toàn Tuyến (lg:col-span-7) -->
+        <div class="lg:col-span-7 bg-[#EFE7DA] p-4 rounded-2xl gold-border shadow-inner relative flex flex-col">
+          <div class="flex items-center justify-between pb-3 border-b border-gold/30">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-earth-americas text-crimson"></i>
+              <span class="font-display font-bold text-xs uppercase tracking-wider text-crimson-dark">Hải Đồ Hoạt Động Cứu Nước</span>
+            </div>
+          </div>
+
+          <!-- Bản Đồ Hình Ảnh & Canvas Vẽ Tuyến Đường -->
+          <div class="relative w-full flex-1 min-h-[380px] sm:min-h-[480px] mt-3 rounded-xl overflow-hidden border border-parchment-300 shadow-inner">
+            <!-- Ảnh bản đồ nền có sẵn các node -->
+            <img src="bản.jpg" alt="Bản đồ thế giới" class="absolute inset-0 w-full h-full object-cover z-0">
+            
+            <!-- Lớp vẽ tuyến đường nối các node -->
+            <canvas id="routeCanvas" class="absolute inset-0 z-10 w-full h-full block pointer-events-none"></canvas>
+            
+            <!-- Chú giải bản đồ -->
+            <div class="absolute bottom-3 left-3 z-20 bg-parchment-50/90 backdrop-blur-sm p-2 rounded-lg border border-gold/40 text-[10px] space-y-1 text-ink-soft shadow">
+              <div class="flex items-center space-x-1.5">
+                <span class="w-3 h-3 rounded-full bg-gold border-2 border-crimson inline-block shadow"></span>
+                <span>Tọa độ Bác đã đi qua</span>
+              </div>
+              <div class="flex items-center space-x-1.5">
+                <span class="w-4 h-0.5 bg-crimson inline-block shadow"></span>
+                <span>Hải trình cứu nước lịch sử</span>
+              </div>
+            </div>
+
+            <!-- Nút phát animation lộ trình -->
+            <button onclick="playRouteAnimation()"
+              class="absolute top-3 right-3 z-20 px-3 py-1.5 rounded-lg bg-crimson text-gold-light text-xs font-semibold hover:bg-crimson-dark transition shadow-lg flex items-center space-x-1.5">
+              <i class="fa-solid fa-play text-[10px]"></i>
+              <span>Vẽ Lại Hải Trình</span>
+            </button>
+          </div>
+        </div>
+
+    <!-- Cột Bên Phải: Dấu ấn hoạt động cách mạng (Dạng Accordion) (lg:col-span-5) -->
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl gold-border shadow-lg flex flex-col h-[500px] sm:h-[600px]">
+          <div class="flex items-center justify-between pb-3 border-b border-parchment-200 mb-4 shrink-0">
+            <div>
+              <span class="text-xs font-bold text-crimson uppercase tracking-widest">Phần II: Anh hùng giải phóng dân tộc</span>
+              <h3 class="font-serif font-bold text-xl text-crimson-dark">Dấu Ấn Hoạt Động Cách Mạng</h3>
+            </div>
+            <i class="fa-solid fa-monument text-gold-dark text-xl"></i>
+          </div>
+
+          <!-- Khu vực Cuộn Dọc chứa 4 Accordion Lớn -->
+          <div class="overflow-y-auto pr-2 space-y-4 flex-1 text-sm text-ink-soft leading-relaxed" style="scrollbar-width: thin; scrollbar-color: #8B1E1E #EFE7DA;">
+            
+            <!-- MỤC 1: HÀNH TRÌNH TÌM ĐƯỜNG CỨU NƯỚC -->
+            <div class="border border-gold/30 rounded-xl overflow-hidden shadow-sm">
+              <button onclick="toggleAccordion('acc1')" class="w-full text-left p-4 bg-parchment-50 hover:bg-parchment-100 flex items-center justify-between transition-colors">
+                <h4 class="font-bold text-crimson-dark text-sm sm:text-base">1. Hành trình tìm đường cứu nước</h4>
+                <i id="icon-acc1" class="fa-solid fa-chevron-down text-gold-dark transition-transform duration-300"></i>
+              </button>
+              <div id="acc1" class="hidden p-4 bg-white text-xs sm:text-sm space-y-4 border-t border-gold/20 text-justify">
+                               <div>
+                  <h5 class="font-bold text-crimson mb-1">Bối cảnh và quyết định ra đi tìm đường cứu nước</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li>Cuối thế kỉ XIX, đầu thế kỉ XX, Việt Nam bị thực dân Pháp đô hộ. Các con đường cứu nước theo khuynh hướng phong kiến và dân chủ tư sản đều thất bại.</li>
+                    <li>Sinh ra trong một gia đình nhà nho yêu nước, Người không đồng tình với con đường của các bậc tiền bối mà muốn tìm hiểu phương Tây để tìm ra con đường mới.</li>
+                    <li>Ngày 5/6/1911, tại Bến Nhà Rồng, Nguyễn Tất Thành lấy tên Văn Ba, rời Việt Nam.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Hành trình bôn ba ở nước ngoài (1911–1917)</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li>Người đi qua nhiều quốc gia thuộc châu Âu, Phi, Mỹ, Á. Vừa lao động, vừa học tập, tìm hiểu tình cảnh của người lao động tại các nước.</li>
+                    <li>Người nhận thấy ở đâu cũng có áp bức, bóc lột và nhận ra sự khác biệt giữa những lời tuyên bố về tự do, bình đẳng với thực tế. Những trải nghiệm này giúp Người tích lũy kinh nghiệm, mở rộng hiểu biết.</li>
+                    <li>Cuối năm 1917, Người trở lại Pháp hoạt động.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Hoạt động tại Pháp và Bản Yêu sách của nhân dân An Nam (1919)</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li>Năm 1919, các nước thắng trận tổ chức Hội nghị Versailles. Nguyễn Tất Thành cùng những người Việt Nam yêu nước chuẩn bị bản yêu sách gửi đến hội nghị.</li>
+                    <li>Ngày 18/6/1919, Người gửi Bản Yêu sách 8 điểm, ký tên <strong class="text-crimson">Nguyễn Ái Quốc</strong> (lần đầu xuất hiện). Dù không được chấp nhận, sự kiện đã tạo tiếng vang lớn trong dư luận.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Tìm thấy con đường cứu nước đúng đắn (1920)</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Tháng 7/1920:</strong> Đọc Sơ thảo Luận cương của V.I. Lênin, Người nhận thấy con đường giải phóng dân tộc gắn liền với cách mạng vô sản là con đường đúng đắn.</li>
+                    <li><strong>Tháng 12/1920:</strong> Tại Đại hội Tours, bỏ phiếu tán thành gia nhập Quốc tế Cộng sản, tham gia thành lập Đảng Cộng sản Pháp. Chuyển biến từ người yêu nước thành người cộng sản.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- MỤC 2: SÁNG LẬP ĐẢNG CỘNG SẢN VN -->
+            <div class="border border-gold/30 rounded-xl overflow-hidden shadow-sm">
+              <button onclick="toggleAccordion('acc2')" class="w-full text-left p-4 bg-parchment-50 hover:bg-parchment-100 flex items-center justify-between transition-colors">
+                <h4 class="font-bold text-crimson-dark text-sm sm:text-base">2. Sáng lập Đảng Cộng sản Việt Nam</h4>
+                <i id="icon-acc2" class="fa-solid fa-chevron-down text-gold-dark transition-transform duration-300"></i>
+              </button>
+              <div id="acc2" class="hidden p-4 bg-white text-xs sm:text-sm space-y-4 border-t border-gold/20 text-justify">
+                
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Chuẩn bị những điều kiện cho sự ra đời của Đảng</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Về tư tưởng, chính trị:</strong> Truyền bá chủ nghĩa Mác – Lênin vào phong trào cách mạng, xác định cách mạng VN gắn liền với cách mạng thế giới.</li>
+                    <li><strong>Về tổ chức:</strong> Tháng 6/1925, thành lập Hội VN Cách mạng Thanh niên tại Quảng Châu. Xuất bản báo Thanh Niên, đào tạo cán bộ.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Chủ trì Hội nghị thành lập Đảng Cộng sản Việt Nam</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li>Cuối năm 1929, phong trào VN xuất hiện 3 tổ chức cộng sản riêng rẽ. Yêu cầu cấp thiết phải thống nhất lực lượng.</li>
+                    <li>Từ <strong>3 đến 7/2/1930</strong> tại Cửu Long, Hương Cảng, Nguyễn Ái Quốc chủ trì hội nghị hợp nhất thành Đảng Cộng sản Việt Nam. Hội nghị thông qua các văn kiện do Người khởi thảo.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Nội dung cơ bản của Cương lĩnh chính trị đầu tiên</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Mục tiêu:</strong> Làm cách mạng tư sản dân quyền và thổ địa cách mạng tiến tới XHCS.</li>
+                    <li><strong>Nhiệm vụ:</strong> Đánh đổ đế quốc Pháp và phong kiến, giành độc lập.</li>
+                    <li><strong>Lực lượng:</strong> Công nhân và nông dân là lực lượng cơ bản. Đảng Cộng sản giữ vai trò lãnh đạo.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- MỤC 3: CHUẨN BỊ VÀ LÃNH ĐẠO CMT8 -->
+            <div class="border border-gold/30 rounded-xl overflow-hidden shadow-sm">
+              <button onclick="toggleAccordion('acc3')" class="w-full text-left p-4 bg-parchment-50 hover:bg-parchment-100 flex items-center justify-between transition-colors">
+                <h4 class="font-bold text-crimson-dark text-sm sm:text-base">3. Chuẩn bị và lãnh đạo Cách mạng tháng Tám</h4>
+                <i id="icon-acc3" class="fa-solid fa-chevron-down text-gold-dark transition-transform duration-300"></i>
+              </button>
+              <div id="acc3" class="hidden p-4 bg-white text-xs sm:text-sm space-y-4 border-t border-gold/20 text-justify">
+                
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Bối cảnh lịch sử</h5>
+                  <p>Đầu năm 1941, chiến tranh thế giới thứ hai ác liệt, nhân dân VN chịu ách thống trị của Pháp và Nhật. Ngày 28/1/1941, Bác trở về nước sau hơn 30 năm, trực tiếp lãnh đạo cách mạng.</p>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Quá trình chuẩn bị cho Cách mạng tháng Tám</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Chính trị:</strong> Tháng 5/1941 chủ trì Hội nghị TW 8 tại Pác Bó. Lập Mặt trận Việt Minh.</li>
+                    <li><strong>Lực lượng, Căn cứ:</strong> Chọn Cao Bằng xây dựng căn cứ địa (Việt Bắc). Ngày 22/12/1944 lập Đội VN Tuyên truyền Giải phóng quân.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Lãnh đạo Tổng khởi nghĩa tháng Tám năm 1945</h5>
+                  <p>Tháng 8/1945, Nhật đầu hàng. Bác cùng TW Đảng chớp thời cơ: 13/8 phát động Tổng khởi nghĩa; 16-17/8 tổ chức Quốc dân Đại hội Tân Trào; 18/8 Người gửi Thư kêu gọi Tổng khởi nghĩa.</p>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">Diễn biến thắng lợi & Tuyên ngôn Độc lập</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li>Khởi nghĩa thắng lợi nhanh chóng: 19/8 tại Hà Nội, 23/8 tại Huế, 25/8 tại Sài Gòn. Đập tan ách thống trị phát xít và phong kiến.</li>
+                    <li>Ngày <strong>2/9/1945</strong>, tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- MỤC 4: LÃNH ĐẠO KHÁNG CHIẾN PHÁP - MỸ -->
+            <div class="border border-gold/30 rounded-xl overflow-hidden shadow-sm pb-4">
+              <button onclick="toggleAccordion('acc4')" class="w-full text-left p-4 bg-parchment-50 hover:bg-parchment-100 flex items-center justify-between transition-colors">
+                <h4 class="font-bold text-crimson-dark text-sm sm:text-base">4. Lãnh đạo kháng chiến chống Pháp & chống Mỹ</h4>
+                <i id="icon-acc4" class="fa-solid fa-chevron-down text-gold-dark transition-transform duration-300"></i>
+              </button>
+              <div id="acc4" class="hidden p-4 bg-white text-xs sm:text-sm space-y-4 border-t border-gold/20 text-justify">
+                
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">a. Lãnh đạo cuộc kháng chiến chống Pháp (1945-1954)</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Nỗ lực hòa bình:</strong> Ký Hiệp định Sơ bộ (6/3/1946) và Tạm ước (14/9/1946) để củng cố lực lượng.</li>
+                    <li><strong>Phát động kháng chiến:</strong> Đêm 19/12/1946, ra Lời kêu gọi toàn quốc kháng chiến ("Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước...").</li>
+                    <li><strong>Chỉ đạo trường kỳ:</strong> Trực tiếp chỉ đạo Chiến dịch Biên giới (1950) và mở Chiến dịch Điện Biên Phủ, buộc Pháp ký Hiệp định Giơ-ne-vơ (7/1954), giải phóng miền Bắc.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-bold text-crimson mb-1">b. Lãnh đạo cuộc kháng chiến chống Mỹ (1954-1975)</h5>
+                  <ul class="list-disc ml-4 space-y-1">
+                    <li><strong>Hai nhiệm vụ chiến lược:</strong> Xây dựng miền Bắc XHCN làm hậu phương lớn và tiếp tục đấu tranh giải phóng miền Nam, thống nhất đất nước.</li>
+                    <li><strong>Kêu gọi toàn dân:</strong> Ngày 17/7/1966, Người ra Lời kêu gọi khẳng định: <em>"Không có gì quý hơn độc lập, tự do"</em>. Tranh thủ sự ủng hộ của quốc tế.</li>
+                    <li><strong>Tiếp tục lãnh đạo đến 1969:</strong> Người qua đời ngày 2/9/1969, để lại bản Di chúc lịch sử. Dưới tư tưởng của Người, đại thắng Mùa Xuân 30/4/1975 đã giải phóng hoàn toàn miền Nam.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+ </div>   <!-- đóng, thẻ mở ở dòng 580 (grid 12 cột) -->
+    </div>     <!-- đóng, thẻ mở ở dòng 568 (max-w-7xl) -->
+  </section> 
+
+ <!-- ======================================================== -->
+  <!-- 4. DẤU ẤN CỦA HỒ CHÍ MINH TRONG LÒNG NHÂN DÂN THẾ GIỚI   -->
+  <!-- ======================================================== -->
+  <section id="global" class="py-20 bg-parchment-200/60 border-t border-parchment-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header & Tóm tắt (Đã tích hợp nội dung text của bạn) -->
+      <div class="text-center max-w-4xl mx-auto mb-14 space-y-5">
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-crimson">Tinh hoa văn hóa nhân loại</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-crimson-dark">Hồ Chí Minh Trong Lòng Nhân Dân Thế Giới</h2>
+        <div class="w-24 h-1 bg-gold mx-auto"></div>
+        
+        <div class="text-sm sm:text-base text-ink-soft leading-relaxed text-justify sm:text-left space-y-3 bg-white p-6 rounded-2xl gold-border shadow-sm">
+          <p>
+            Thế giới vinh danh Người trước hết vì cả cuộc đời Hồ Chí Minh đã gắn liền với sự nghiệp giải phóng dân tộc Việt Nam, đấu tranh không mệt mỏi vì độc lập, tự do cho nhân dân, đồng thời góp phần cổ vũ phong trào giải phóng dân tộc và đấu tranh vì hòa bình, dân chủ, tiến bộ xã hội trên toàn cầu.
+          </p>
+          <p>
+            Bên cạnh vai trò lãnh tụ cách mạng, Người còn có đóng góp quan trọng trên nhiều lĩnh vực như tư tưởng, văn hóa, giáo dục, văn học, nghệ thuật. Tư tưởng nhân văn sâu sắc và lối sống giản dị của Người trở thành biểu tượng đẹp về nhân cách – sự kết tinh giữa truyền thống văn hóa Việt Nam và tinh hoa văn hóa nhân loại.
+          </p>
+          <p class="font-bold text-crimson-dark">
+            Sau khi được UNESCO tôn vinh, nhiều quốc gia trên thế giới đã xây dựng tượng đài, quảng trường, nhà lưu niệm, đặt tên đường phố mang tên Người. Hồ Chí Minh không chỉ là một nhà lãnh đạo kiệt xuất mà còn là biểu tượng của khát vọng tự do, hòa bình và tình đoàn kết giữa các dân tộc.
+          </p>
+        </div>
+      </div>
+
+     <!-- Danh sách các công trình tiêu biểu trên thế giới -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Thẻ 1: Nga -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-300">
+            <!-- Đã bọc link ảnh qua CDN proxy wsrv.nl để tải xuyên tường lửa -->
+            <img src="nga1.jpg" alt="Moscow, Nga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Liên Bang Nga</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Tượng đài & Quảng trường (Moscow)</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Khánh thành năm 1990 nhân kỷ niệm 100 năm ngày sinh của Bác. Bức tượng khắc họa nụ cười hiền hậu, bên dưới là dòng chữ "Không có gì quý hơn độc lập tự do" bằng tiếng Nga.</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 2: Pháp -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-300">
+            <img src="pháp.jpg" alt="Montreuil, Pháp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Pháp</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Không gian Hồ Chí Minh (Montreuil)</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Nằm tại Bảo tàng Lịch sử sống ở ngoại ô Paris, nơi lưu giữ những kỷ vật quý giá về khoảng thời gian Nguyễn Ái Quốc hoạt động tại ngõ Compoint.</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 3: Cuba -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-300">
+            <img src="cuba.jpg" alt="Havana, Cuba" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Cuba</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Công viên Hồ Chí Minh (Havana)</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Biểu tượng cho tình đoàn kết anh em Việt Nam - Cuba. Tượng đài Bác được đặt trang trọng giữa thủ đô Havana, thể hiện tình cảm đặc biệt của nhân dân Cuba.</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 4: Mexico -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-300">
+            <img src="mexico.jpg" alt="Mexico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Mexico</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Công viên Tự do các dân tộc</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Tại trung tâm lịch sử Mexico City, bức tượng Bác Hồ ngồi làm việc giản dị được tạc bởi nhà điêu khắc nổi tiếng Ponzanelli, vinh danh khát vọng hòa bình.</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 5: Ấn Độ -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-300">
+            <img src="ấn.jpg" alt="New Delhi, Ấn Độ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Ấn Độ</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Đại lộ Hồ Chí Minh (New Delhi)</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Ấn Độ là một trong những quốc gia đầu tiên đặt tên đường mang tên Người. Con đường rợp bóng cây tại thủ đô minh chứng cho tình hữu nghị thân thiết.</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 6: Mông Cổ -->
+        <div class="bg-white rounded-2xl gold-border overflow-hidden shadow hover:shadow-xl transition-all group flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-parchment-200 flex items-center justify-center">
+             <img src="mông.jpg" alt="New Delhi, Ấn Độ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 right-3 bg-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Mông Cổ</div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-serif font-bold text-base text-ink mb-2">Trường Trung học Hồ Chí Minh, thủ đô Ulanbato</h3>
+            <p class="text-xs text-ink-soft leading-relaxed flex-1">Tượng Chủ tịch Hồ Chí Minh bằng đồng cao 1,7m, đặt trên bệ cao 3,33m, tại trường Trung học Hồ Chí Minh, thủ đô Ulanbato. Tại đây, ngoài bức tượng còn có nhiều tài liệu, hiện vật về cuộc đời hoạt động cách mạng của Chủ tịch Hồ Chí Minh, về mối quan hệ hợp tác hữu nghị giữa hai nước Việt Nam-Mông Cổ.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- ======================================================== -->
+  <!-- 4B. DẤU ẤN HỒ CHÍ MINH TRONG LÒNG NHÂN DÂN VIỆT NAM      -->
+  <!-- ======================================================== -->
+  <section id="vietnam" class="py-20 bg-parchment-100 border-t border-parchment-300 relative overflow-hidden">
+    <!-- Họa tiết chìm quyển sổ cổ -->
+    <div class="absolute top-10 right-10 opacity-[0.03] pointer-events-none">
+      <i class="fa-solid fa-book-journal-whills text-[400px] text-crimson-deep"></i>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-4xl mx-auto mb-12 space-y-5">
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-crimson">Sống mãi trong sự nghiệp của chúng ta</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-crimson-dark">Hồ Chí Minh Trong Lòng Nhân Dân Việt Nam</h2>
+        <div class="w-24 h-1 bg-gold mx-auto"></div>
+        
+        <div class="text-sm sm:text-base text-ink-soft leading-relaxed text-justify sm:text-left space-y-3 bg-white p-6 rounded-2xl gold-border shadow-sm">
+          <p>
+            Sinh ra và hoạt động trong thế kỉ XX, nhưng tên tuổi và sự nghiệp của Chủ tịch Hồ Chí Minh <strong class="text-crimson">sống mãi trong lòng nhân dân Việt Nam</strong>. Người đã cống hiến và hy sinh trọn cuộc đời cho dân tộc, đặc biệt là trong sự nghiệp giải phóng dân tộc, xây dựng chủ nghĩa xã hội và thống nhất đất nước.
+          </p>
+          <p>
+            Chủ tịch Hồ Chí Minh còn là tấm gương sáng về đạo đức, phẩm chất, lối sống cho các thế hệ người dân Việt Nam học tập và noi theo. Sự vinh danh và tri ân của nhân dân Việt Nam đối với Chủ tịch Hồ Chí Minh được nối tiếp qua nhiều thế hệ với những hình thức khác nhau như: xây dựng công trình tưởng niệm, xây dựng hình tượng trong văn học nghệ thuật, phát động phong trào thi đua học tập và làm theo tư tưởng, đạo đức của Bác.
+          </p>
+        </div>
+      </div>
+
+      <!-- KỶ LỤC & THỐNG KÊ (Quyển sổ mở) -->
+      <div class="max-w-6xl mx-auto bg-[#Fdfbf5] rounded-3xl gold-border shadow-xl overflow-hidden flex flex-col mb-16 relative">
+        <!-- Đường gân giữa quyển sổ -->
+        <div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-8 bg-gradient-to-r from-parchment-200/50 via-parchment-300 to-parchment-200/50 -translate-x-1/2 shadow-inner"></div>
+
+        <div class="bg-crimson text-white text-center py-4 border-b-4 border-gold">
+          <h3 class="font-display font-bold text-lg sm:text-xl uppercase tracking-widest">Sổ Lưu Ký Tưởng Niệm Toàn Quốc</h3>
+          <p class="text-xs mt-1 font-sans italic opacity-80">Theo thống kê, ở Việt Nam hiện có hơn 300 công trình tưởng niệm Hồ Chí Minh, với 6 loại hình chủ yếu.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 p-6 sm:p-10 gap-x-16 gap-y-10 text-xs sm:text-sm font-serif text-ink-soft">
+          
+          <!-- CỘT TRÁI SỔ -->
+          <div class="space-y-8 relative z-10">
+            <!-- 1. Đền thờ -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-solid fa-vihara w-6 text-gold-dark"></i> I. Đền thờ Chủ tịch Hồ Chí Minh</h4>
+              <ul class="list-decimal list-outside ml-6 space-y-2">
+                <li>Đền thờ xây dựng năm 1970 tại xã Long Đức, thị xã Trà Vinh, tỉnh Trà Vinh.</li>
+                <li>Đền thờ Bác Hồ xây dựng năm 1973 tại Trí Phải Tây, huyện Thới Bình, tỉnh Cà Mau.</li>
+                <li>Đền thờ Bác Hồ tại Lương Tâm, huyện Long Mỹ, Cần Thơ.</li>
+                <li>Đền thờ Bác Hồ tại Tân Hưng Đông, huyện Cái Nước, tỉnh Cà Mau.</li>
+                <li>Đền thờ Bác Hồ tại Thôn Cái Tắt, xã An Đồng, huyện An Hải, Hải Phòng (2/9/1993).</li>
+                <li>Đền thờ Bác Hồ tại xã Đại Kim, huyện Thanh Trì, Hà Nội (19/5/1995).</li>
+              </ul>
+            </div>
+
+            <!-- 2. Nhà tưởng niệm -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-solid fa-house-flag w-6 text-gold-dark"></i> II. Nhà tưởng niệm Chủ tịch Hồ Chí Minh</h4>
+              <ul class="list-decimal list-outside ml-6 space-y-2">
+                <li>Nhà tưởng niệm xây dựng năm 1970 ở xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An.</li>
+                <li>Nhà tưởng niệm xây dựng năm 1983 ở huyện Văn Chấn, tỉnh Yên Bái.</li>
+                <li>Nhà tưởng niệm xây dựng năm 1990 ở phường Kim Liên, quận Đống Đa, Hà Nội.</li>
+                <li>Nhà tưởng niệm ở ATK Định Hoá, tỉnh Thái Nguyên (TP Hà Nội tặng tháng 5/2005).</li>
+              </ul>
+            </div>
+
+            <!-- 3. Tượng Bác -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-solid fa-monument w-6 text-gold-dark"></i> III. Một số tượng đài tiêu biểu</h4>
+              <ul class="list-decimal list-outside ml-6 space-y-2">
+                <li>Tượng đứng toàn thân Chủ tịch Hồ Chí Minh ở bến Ninh Kiều, Cần Thơ.</li>
+                <li>Nhóm tượng Bác Hồ với thiếu nhi ở trước Bảo tàng Hồ Chí Minh - Chi nhánh Bình Thuận.</li>
+                <li>Nhóm tượng Bác Hồ với đồng bào các dân tộc Tây Nguyên tại Buôn Ma Thuột.</li>
+                <li>Tượng Nguyễn Tất Thành tại trường Quốc học Huế.</li>
+                <li>Tượng đứng toàn thân Chủ tịch Hồ Chí Minh ở đảo Cô Tô, tỉnh Quảng Ninh.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CỘT PHẢI SỔ -->
+          <div class="space-y-8 relative z-10">
+            <!-- 4. Đài kỷ niệm -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-brands fa-fort-awesome w-6 text-gold-dark"></i> IV. Đài kỷ niệm & Bia lưu niệm</h4>
+              <ul class="list-decimal list-outside ml-6 space-y-2">
+                <li><strong class="text-ink">Các điểm trong di tích Pác Bó:</strong> Hang Cốc Bó, Lán Khuổi Nậm, Bộ bàn ghế đá, Núi Các Mác, suối Lênin...</li>
+                <li>Bến Đò (cũ) thôn Phú Gia, xã Phú Thượng, huyện Từ Liêm, Hà Nội (Nơi Bác đặt chân về HN 24/8/1945).</li>
+                <li>Ngôi nhà 48 Hàng Ngang, Hà Nội, nơi Bác Hồ viết Tuyên ngôn độc lập.</li>
+                <li>Nhà số 5 Châu Văn Liêm, Q.5, TP. HCM (Nơi Bác ở trước khi ra đi tìm đường cứu nước).</li>
+                <li>Trường Dục Thanh, Phan Thiết (Nơi thầy giáo Nguyễn Tất Thành dạy học năm 1910).</li>
+                <li>Đồi Tỉnh Keo, ATK Định Hoá, Thái Nguyên (Bác ở và làm việc 1948, 1952, 1953).</li>
+              </ul>
+            </div>
+
+            <!-- 5. Tên gọi -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-solid fa-map-location-dot w-6 text-gold-dark"></i> V. Công trình, địa danh mang tên Bác</h4>
+              <ul class="list-decimal list-outside ml-6 space-y-2">
+                <li>Đường Trường Sơn - Đường Hồ Chí Minh.</li>
+                <li>Thành phố Hồ Chí Minh; Chiến dịch Hồ Chí Minh.</li>
+                <li>Học viện Chính trị quốc gia Hồ Chí Minh.</li>
+                <li>Đoàn Thanh niên Cộng sản Hồ Chí Minh & Đội Thiếu niên Tiền phong.</li>
+                <li>Đồng bào dân tộc Vân Kiều, Thừa Thiên Huế tự hào mang họ Hồ.</li>
+              </ul>
+            </div>
+
+            <!-- 6. Thờ tự -->
+            <div>
+              <h4 class="font-bold text-base text-crimson mb-3 flex items-center"><i class="fa-solid fa-om w-6 text-gold-dark"></i> VI. Thờ tự tại Đình, Chùa, Đền, Miếu</h4>
+              <p class="italic mb-2">Bác được nhân dân rước vào thờ tự ở vị trí trang trọng tại các cơ sở tín ngưỡng tâm linh khắp cả nước, tiêu biểu như:</p>
+              <ul class="list-disc list-outside ml-6 space-y-1">
+                <li>Chùa Phật Tích (Tiên Sơn, Bắc Ninh).</li>
+                <li>Chùa Vĩnh Nghiêm (Việt Yên, Bắc Ninh).</li>
+                <li>Chùa Bà Đá (Quận Hoàn Kiếm, Hà Nội).</li>
+                <li>Đền thờ Đức Thánh Trần (Thị xã Hưng Yên).</li>
+                <li>Đền Mẫu Ứng Thiên (Láng Hạ, Đống Đa, Hà Nội).</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+      <!-- LOOKBOOK: CÔNG TRÌNH TƯỞNG NIỆM TRONG NƯỚC (6 ảnh trích xuất qua allorigins CDN) -->
+      <div class="text-center mb-8">
+        <h3 class="font-display font-bold text-2xl text-crimson-dark uppercase tracking-widest border-b-2 border-gold inline-block pb-2"> Công Trình Tưởng Niệm Tiêu Biểu</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 1. Lăng Bác (Hà Nội) -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="lăng.jpg" alt="Lăng Chủ tịch Hồ Chí Minh" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">Thủ đô Hà Nội</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Lăng Chủ Tịch Hồ Chí Minh</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Khởi công ngày 2/9/1973 và hoàn thành ngày 29/8/1975. Đây là nơi an nghỉ vĩnh hằng của Người, là biểu tượng thiêng liêng nhất, nơi nhân dân cả nước hướng về.</p>
+          </div>
+        </div>
+
+        <!-- 2. Khu di tích Kim Liên (Nghệ An) -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="kim.jpg" alt="Quê nội Kim Liên" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">Nam Đàn - Nghệ An</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Khu di tích Quốc gia đặc biệt Kim Liên</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Gồm Quê nội (Làng Sen) và Quê ngoại (Làng Hoàng Trù). Nơi lưu giữ những hiện vật, nếp nhà tranh dung dị gắn liền với thời thơ ấu của cậu bé Nguyễn Sinh Cung.</p>
+          </div>
+        </div>
+
+        <!-- 3. Khu di tích Pác Bó (Cao Bằng) -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="suối.jpg" alt="Suối Lenin - Pác Bó" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">Hà Quảng - Cao Bằng</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Khu di tích lịch sử Pác Bó</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Nơi Bác đặt chân về Tổ quốc sau 30 năm (1941). Quần thể gồm hang Cốc Bó, suối Lê-nin, núi Các Mác, bàn đá chông chênh nơi Người dịch sử Đảng.</p>
+          </div>
+        </div>
+
+        <!-- 4. Tượng đài Bác Hồ với đồng bào các dân tộc Tây Nguyên -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="tây.jpg" alt="Quảng trường Đại Đoàn Kết" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">Pleiku - Gia Lai</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Quảng trường Đại Đoàn Kết</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Bức tượng đồng nguyên khối cao 10.8m nặng 16 tấn, khắc họa hình ảnh Bác đứng vẫy tay chào, phía sau là phù điêu đá miêu tả cuộc sống Tây Nguyên hùng vĩ.</p>
+          </div>
+        </div>
+
+        <!-- 5. Tượng đài Bác Hồ tại Phố Đi Bộ Nguyễn Huệ -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="tượng.jpg" alt="Tượng đài " class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">TP. Hồ Chí Minh</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Tượng đài trước trụ sở UBND TP.HCM</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Khánh thành đúng kỷ niệm 125 năm ngày sinh của Bác (2015). Đặt tại vị trí trang trọng nhất của phố đi bộ Nguyễn Huệ, hướng mặt ra Bến Bạch Đằng nơi Người ra đi tìm đường cứu nước.</p>
+          </div>
+        </div>
+
+        <!-- 6. Đền thờ Bác Hồ tại Cù Lao Dung -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border-2 border-gold/30">
+          <div class="aspect-[4/3] w-full overflow-hidden">
+            <img src="đền.jpg" alt="Đền thờ Cù Lao Dung" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5">
+            <span class="text-gold text-[10px] uppercase font-bold tracking-widest mb-1">Cù Lao Dung - Sóc Trăng</span>
+            <h4 class="text-white font-serif font-bold text-lg leading-tight">Đền thờ Bác Hồ giữa lòng miền Nam</h4>
+            <p class="text-parchment-200 text-xs mt-2 opacity-0 group-hover:opacity-100 transition duration-500 line-clamp-3">Ngôi đền thiêng được quân và dân xã An Thạnh Nhì bí mật xây dựng vào tháng 9/1969, ngay giữa vòng kìm kẹp của địch để tỏ lòng thương tiếc vô hạn khi Người đi xa.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ======================================================== -->
+
+  <!-- 5. KHÔNG GIAN THỰC HÀNH SỐ (DIGITAL HANDS-ON WORKSHOP)    -->
+
+  <!-- ======================================================== -->
+
+  <section id="workshop" class="py-20 bg-parchment-100 border-t border-parchment-300">
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+      <!-- Section Header -->
+
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-crimson">Tương Tác Giáo Dục Trực
+          Quan</span>
+
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-crimson-dark">Trải nghiệm trực quan</h2>
+
+        <div class="w-24 h-1 bg-gold mx-auto"></div>
+
+        <p class="text-xs sm:text-sm text-ink-soft">
+
+          Mô phỏng chân thực các trải nghiệm lịch sử: Tự tay lăn mực in số báo cách mạng đầu tiên, gõ máy chữ cơ tạo thi  phẩm và thử tài hiểu biết lịch sử.
+
+        </p>
+
+
+        <!-- Tab chuyển đổi -->
+
+        <div class="inline-flex p-1 rounded-xl bg-parchment-200 border border-gold/40 mt-4">
+
+          <button onclick="switchWorkshopTab('print')" id="tabBtn-print"
+            class="workshop-tab-btn active px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2">
+
+            <i class="fa-solid fa-newspaper text-gold"></i>
+
+            <span>1. In Báo 1941</span>
+
+          </button>
+
+          <button onclick="switchWorkshopTab('typewriter')" id="tabBtn-typewriter"
+            class="workshop-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2">
+
+            <i class="fa-solid fa-keyboard text-gold"></i>
+
+            <span>2. Gõ Máy Chữ Thơ Bác</span>
+
+          </button>
+
+          <button onclick="switchWorkshopTab('quiz')" id="tabBtn-quiz"
+            class="workshop-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2">
+
+            <i class="fa-solid fa-award text-gold"></i>
+
+            <span>3. Trắc Nghiệm Di Sản</span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- NỘI DUNG TAB 1: IN BÁO VIỆT NAM ĐỘC LẬP 1941 -->
+
+      <div id="workshop-print" class="workshop-content p-6 sm:p-8 rounded-2xl bg-white gold-border shadow-xl space-y-6">
+
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-parchment-300">
+
+          <div>
+
+            <span class="text-xs font-bold uppercase tracking-wider text-crimson">Pác Bó - Cao Bằng, Tháng 8/1941</span>
+
+            <h3 class="font-serif font-bold text-xl text-ink">Trải Nghiệm In Bản Gỗ Báo "Việt Nam Độc Lập"</h3>
+
+          </div>
+
+          <div class="flex items-center space-x-3">
+
+            <button onclick="inkAndPrintPaper()"
+              class="px-5 py-2.5 rounded-full bg-crimson hover:bg-crimson-dark text-white font-sans text-xs font-bold transition shadow flex items-center space-x-2 active:scale-95">
+
+              <i class="fa-solid fa-paint-roller text-gold"></i>
+
+              <span>Lăn Mực & Dập In Ngay</span>
+
+            </button>
+
+            <button onclick="resetPrint()"
+              class="px-3 py-2 rounded-full border border-parchment-300 text-xs text-ink-light hover:bg-parchment-100 transition"
+              title="Làm lại tờ giấy trắng">
+
+              <i class="fa-solid fa-rotate-right"></i>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Khay in báo mô phỏng -->
+
+        <div
+          class="relative w-full max-w-4xl mx-auto p-6 sm:p-10 rounded-xl typewriter-paper border-2 border-parchment-300 min-h-[380px] flex flex-col justify-between transition-all duration-700 overflow-hidden"
+          id="newspaperSheet">
+
+
+
+          <!-- Họa tiết trục in chuyển động -->
+
+          <div id="inkRoller"
+            class="absolute inset-x-0 -top-12 h-8 bg-black/80 rounded shadow-2xl transition-all duration-1000 opacity-0 pointer-events-none flex items-center justify-center text-white text-[10px] tracking-widest uppercase">
+
+            Trục in mực thủ công đang quét qua...
+
+          </div>
+
+
+         <div class="opacity-10 transition-opacity duration-1000" id="newspaperContent">
+            <style>
+              .newspaper-font { font-family: 'Merriweather', serif; }
+              .paper-border { border: 3px double #3d2f2b; }
+              .col-divider { border-right: 1px solid #4a3b32; }
+              @media (max-width: 768px) {
+                  .col-divider { border-right: none; border-bottom: 1px solid #4a3b32; padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+              }
+              .newspaper-header { border-bottom: 3px solid #2c221e; }
+            </style>
+
+            <div class="max-w-5xl mx-auto paper-border bg-[#f7f1e3] p-6 sm:p-10 shadow-2xl rounded-sm relative text-[#2c221e] newspaper-font text-left">
+                
+                <!-- BẢO VẬT LỊCH SỬ / TOP HEADER -->
+                <header class="newspaper-header pb-6 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <!-- Hán tự góc trái trên cùng -->
+                        <div class="text-xs font-bold tracking-widest text-[#5c4033] border border-[#5c4033] px-2 py-1">
+                            國立報 (Quốc Lập Báo)
+                        </div>
+
+                        <!-- Tiêu đề chính tờ báo -->
+                        <div class="text-center flex-1">
+                            <h1 class="text-3xl sm:text-5xl font-black tracking-wider text-[#1a1412] uppercase drop-shadow-sm my-2 font-display">
+                                VIỆT-NAM ĐỘC-LẬP
+                            </h1>
+                            <div class="flex justify-center items-center gap-6 text-sm sm:text-base font-bold mt-2">
+                                <span class="border-b border-[#2c221e] pb-0.5">Số 101</span>
+                                <span class="text-xl font-bold tracking-widest">高平</span>
+                                <span class="border-b border-[#2c221e] pb-0.5">Cao-Bằng</span>
+                            </div>
+                        </div>
+
+                        <!-- Ngày tháng & Khẩu hiệu góc phải -->
+                        <div class="w-full md:w-56 border border-[#2c221e] p-3 bg-[#f0e6cb] text-xs sm:text-sm leading-relaxed">
+                            <div class="font-bold text-right mb-1 border-b border-[#4a3b32] pb-1">Ngày 1 tháng 8 năm 1941.</div>
+                            <p class="italic text-center">"Nhiều điều phủ lấy giá gương,<br>Người trong một nước phải thương nhau cùng!"</p>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- NỘI DUNG CHÍNH: CHIA 3 CỘT -->
+                <main class="grid grid-cols-1 md:grid-cols-3 gap-6 text-justify text-xs sm:text-sm leading-relaxed">
+                    
+                    <!-- CỘT 1 & 2: XÃ LUẬN -->
+                    <section class="md:col-span-2 col-divider md:pr-6">
+                        <div class="text-center mb-4">
+                            <h2 class="text-lg sm:text-xl font-bold uppercase tracking-wide border-b-2 border-t-2 border-[#2c221e] py-1 inline-block px-6">Xã luận</h2>
+                        </div>
+                        <div class="space-y-3 font-normal">
+                            <p><span class="float-left text-3xl font-bold leading-none pr-2 pt-1 font-display">T</span>ây cốt làm cho dân ta ngu, làm cho dân ta hèn. Ngu thì phải hèn. Cả ngu hèn thì nó dễ trị, dễ ăn hiếp, dễ bóc lột.</p>
+                            <p>Tây có 2 cách làm cho ta ngu, hèn: <br><strong>(1) là cách bưng mắt.</strong> Nó không cho ta tự do ra báo chí. Nên trong nước và thiên hạ có việc gì, ta cũng không biết gì. Ví dụ: Khi Tây mất nước rồi, dân ta khởi nghĩa ở Nam Kỳ, ở Nghệ, ở Bắc Sơn, mà ta ở Cao Bằng không biết gì hết.</p>
+                            <p><strong>(2) là cách lừa gạt.</strong> Nó bảo bọn đê hèn như báo Đồng-pháp đăng tin bố-láo để lừa gạt dân ta. Đâu đâu cũng oán tây, cũng xục xịch mà báo Đồng-pháp cứ nói như nước ta thái bình lắm. Ví dụ: ở X[i]-ri Tây đánh thua chạy không kịp mà báo Đồng-pháp nói Tây vẫn thắng trận.</p>
+                            <p>Tây cốt làm cho dân ta ngu hèn. Báo <em>"Việt-Nam Độc-Lập"</em> cốt làm cho dân ta hết ngu hèn, biết các việc, biết đoàn-kết, đánh Tây đánh Nhật, làm cho Việt-Nam độc-lập, bình-đẳng, tự-do!</p>
+                            <div class="mt-4 p-3 border border-[#4a3b32] bg-[#f0e6cb] text-center space-y-2">
+                                <div class="font-bold text-base tracking-wider text-[#3d2f2b]">抗法抗日 ! 联华抗日 ! 越南独立 !</div>
+                                <div class="font-semibold italic text-xs">Kháng Pháp kháng Nhật! Đoàn kết! Việt-Nam độc lập!</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CỘT 3: TIN TỨC -->
+                    <section class="space-y-6">
+                        <div>
+                            <div class="text-center mb-4">
+                                <h2 class="text-base font-bold uppercase tracking-wide border-b-2 border-t-2 border-[#2c221e] py-1 inline-block px-4">Việc trong nước</h2>
+                            </div>
+                            <div class="space-y-2 text-xs">
+                                <p>Tây bắt các làng lập trường ấu-học. Cố tình phải lập đến mấy trăm trường. Vì sao từ trước, Tây để con cháu ta dốt nát, mà nay lại muốn con cháu ta học hành?</p>
+                                <p>Vì Tây mất nước rồi. Nó sợ dân ta nổi lên đánh đuổi nó. Nó bắt các làng lập trường:</p>
+                                <p>(1) là để thanh niên có việc làm ăn, không theo cách mạng.</p>
+                                <p>(2) là để bắt bớ dò thám trong làng có cách mạng hay không.</p>
+                                <p>Chắc các làng không mắc lừa, và các bạn thanh niên cũng không mắc lừa!</p>
+                            </div>
+                        </div>
+                        <hr class="border-t border-[#4a3b32] my-4">
+                        <div>
+                            <div class="text-center mb-4">
+                                <h2 class="text-base font-bold uppercase tracking-wide border-b-2 border-t-2 border-[#2c221e] py-1 inline-block px-4">Tin Thế-Giới</h2>
+                            </div>
+                            <div class="space-y-2 text-xs">
+                                <p>Chỉ tính nha 45 ngày mà Tây mất nước. Tây mất hơn 10 vạn lính chết. Từ đấy đến nay mỗi ngày Tây phải cúng cho Đức 20 triệu đồng bạc.</p>
+                                <p class="font-bold mt-2 text-center text-[#1a1412]">Vậy nên Tây thẳng tay bóc lột dân ta!</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer class="mt-8 pt-4 border-t border-[#2c221e] text-center text-[10px] opacity-75 italic">
+                    Trang web số hóa và trình bày lại theo nguyên bản lịch sử tờ "Việt Nam Độc Lập" - Số 101 (1/8/1941).
+                </footer>
+            </div>
+          </div>
+
+
+
+          <div id="newspaperPlaceholder" class="text-center py-20 text-ink-light space-y-2">
+
+            <i class="fa-solid fa-scroll text-4xl text-parchment-300"></i>
+
+            <p class="text-xs">Tờ giấy dó đang trống trên bàn đá Pác Bó.<br>Bấm <strong>"Lăn Mực & Dập In Ngay"</strong>
+              để tự tay in bản báo lịch sử.</p>
+
+          </div>
+
+
+          <div
+            class="text-right pt-2 border-t border-ink/20 text-[9px] text-ink-light flex justify-between items-center">
+
+            <span>Bảo tàng Lịch sử - Di sản số</span>
+
+            <span class="museum-seal !w-10 !h-10 !text-[6px]">IN THÀNH CÔNG</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- NỘI DUNG TAB 2: GÕ MÁY CHỮ THƠ BÁC -->
+
+      <div id="workshop-typewriter"
+        class="workshop-content hidden p-6 sm:p-8 rounded-2xl bg-white gold-border shadow-xl space-y-6">
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-parchment-300">
+
+          <div>
+
+            <span class="text-xs font-bold uppercase tracking-wider text-crimson">Chiếc Máy Chữ Hermes Của Bác</span>
+
+            <h3 class="font-serif font-bold text-xl text-ink">Tập Gõ Thơ Bác Với Âm Thanh Cơ Học</h3>
+
+          </div>
+
+          <!-- Chọn bài thơ -->
+
+          <div class="flex items-center space-x-2">
+
+            <span class="text-xs text-ink-light font-medium">Chọn thi phẩm:</span>
+
+            <select id="poemSelect" onchange="changePoem()"
+              class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-gold/50 bg-parchment-50 text-crimson-dark focus:outline-none">
+
+              <option value="ngamtrang">Ngắm Trăng (Vọng Nguyệt)</option>
+
+              <option value="diduong">Đi Đường (Tẩu Lộ)</option>
+
+              <option value="nguyentieu">Rằm Tháng Giêng (Nguyên Tiêu)</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <!-- Khung giấy máy chữ hiển thị -->
+
+        <div
+          class="max-w-xl mx-auto p-6 rounded-xl typewriter-paper border border-parchment-300 shadow-inner min-h-[160px] text-center font-serif text-sm sm:text-base leading-relaxed text-ink space-y-1">
+
+          <div id="typewriterTarget" class="text-crimson font-bold text-sm tracking-wide"></div>
+
+          <div id="typewriterOutput" class="min-h-[70px] whitespace-pre-line text-ink font-semibold"></div>
+
+          <div class="text-[11px] text-ink-light italic pt-2 border-t border-parchment-300 font-sans">
+
+            Gõ phím trên máy tính hoặc nhấp các phím ảo phía dưới để hoàn thành câu thơ
+
+          </div>
+
+        </div>
+
+
+        <!-- Bàn phím máy chữ giả lập tương tác -->
+
+        <div
+          class="bg-stone-800 p-4 sm:p-6 rounded-2xl shadow-2xl max-w-2xl mx-auto space-y-2 border-4 border-stone-900">
+
+          <div class="flex justify-center gap-1.5 sm:gap-2">
+
+            <button onclick="pressKey('Q')" class="type-key">Q</button>
+
+            <button onclick="pressKey('W')" class="type-key">W</button>
+
+            <button onclick="pressKey('E')" class="type-key">E</button>
+
+            <button onclick="pressKey('R')" class="type-key">R</button>
+
+            <button onclick="pressKey('T')" class="type-key">T</button>
+
+            <button onclick="pressKey('Y')" class="type-key">Y</button>
+
+            <button onclick="pressKey('U')" class="type-key">U</button>
+
+            <button onclick="pressKey('I')" class="type-key">I</button>
+
+            <button onclick="pressKey('O')" class="type-key">O</button>
+
+            <button onclick="pressKey('P')" class="type-key">P</button>
+
+          </div>
+
+          <div class="flex justify-center gap-1.5 sm:gap-2">
+
+            <button onclick="pressKey('A')" class="type-key">A</button>
+
+            <button onclick="pressKey('S')" class="type-key">S</button>
+
+            <button onclick="pressKey('D')" class="type-key">D</button>
+
+            <button onclick="pressKey('F')" class="type-key">F</button>
+
+            <button onclick="pressKey('G')" class="type-key">G</button>
+
+            <button onclick="pressKey('H')" class="type-key">H</button>
+
+            <button onclick="pressKey('J')" class="type-key">J</button>
+
+            <button onclick="pressKey('K')" class="type-key">K</button>
+
+            <button onclick="pressKey('L')" class="type-key">L</button>
+
+          </div>
+
+          <div class="flex justify-center gap-1.5 sm:gap-2">
+
+            <button onclick="pressKey('Z')" class="type-key">Z</button>
+
+            <button onclick="pressKey('X')" class="type-key">X</button>
+
+            <button onclick="pressKey('C')" class="type-key">C</button>
+
+            <button onclick="pressKey('V')" class="type-key">V</button>
+
+            <button onclick="pressKey('B')" class="type-key">B</button>
+
+            <button onclick="pressKey('N')" class="type-key">N</button>
+
+            <button onclick="pressKey('M')" class="type-key">M</button>
+
+            <button onclick="pressSpace()" class="type-key !w-24 sm:!w-36 bg-stone-700">Dấu Cách</button>
+
+            <button onclick="autoFillPoem()" class="type-key !w-20 bg-crimson text-gold text-[10px]">Tự Gõ</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- NỘI DUNG TAB 3: TRẮC NGHIỆM LỊCH SỬ & BẰNG CHỨNG NHẬN ĐIỆN TỬ -->
+
+      <div id="workshop-quiz"
+        class="workshop-content hidden p-6 sm:p-8 rounded-2xl bg-white gold-border shadow-xl space-y-6">
+
+        <div class="flex items-center justify-between pb-4 border-b border-parchment-300">
+
+          <div>
+
+            <span class="text-xs font-bold uppercase tracking-wider text-crimson">Tìm Hiểu Lịch Sử</span>
+
+            <h3 class="font-serif font-bold text-xl text-ink">Thử Thách: "Dấu Ấn Thời Đại" (5 Câu Hỏi)</h3>
+
+          </div>
+
+          <div class="text-right">
+
+            <span class="text-xs font-semibold text-ink-light">Điểm số hiện tại:</span>
+
+            <span id="quizScore" class="font-display font-bold text-lg text-crimson ml-1">0/5</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Khung Câu Hỏi Trắc Nghiệm -->
+
+        <div id="quizContainer" class="space-y-6">
+
+          <div id="quizQuestionBox" class="space-y-4">
+
+            <!-- Render câu hỏi bằng JS -->
+
+          </div>
+
+        </div>
+
+
+        <!-- Khung Cấp Bằng Chứng Nhận (Hiện khi xong) -->
+
+        <div id="certificateContainer" class="hidden space-y-6 text-center">
+
+          <div class="p-4 bg-gold/10 rounded-xl border border-gold/40 text-xs text-crimson-dark">
+
+            <i class="fa-solid fa-circle-check text-gold text-base mr-1"></i>
+
+            Chúc mừng bạn đã hoàn thành xuất sắc thử thách tìm hiểu di sản Chủ tịch Hồ Chí Minh!
+
+          </div>
+
+
+          <!-- Bản chứng nhận vẽ bằng Canvas -->
+
+          <div
+            class="max-w-xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-gold bg-parchment-50 p-6 relative">
+
+            <canvas id="certCanvas" width="600" height="400"
+              class="w-full h-auto rounded border border-parchment-300"></canvas>
+
+          </div>
+
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+
+            <input type="text" id="certNameInput" placeholder="Nhập họ và tên của bạn..."
+              class="px-4 py-2 text-xs rounded-lg border border-gold/60 focus:outline-none focus:ring-2 focus:ring-crimson w-64 text-center">
+
+            <button onclick="renderCertificate()"
+              class="px-4 py-2 bg-crimson text-white text-xs font-bold rounded-lg hover:bg-crimson-dark transition">Cập
+              Nhật Tên</button>
+
+            <button onclick="restartQuiz()"
+              class="px-4 py-2 bg-parchment-200 text-ink-soft text-xs font-semibold rounded-lg hover:bg-parchment-300 transition">Làm
+              Lại Quiz</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================== -->
+
+  <!-- 6. BỨC TƯỜNG "THẾ HỆ TRẺ VIẾT TIẾP TRANG SỬ"             -->
+
+  <!-- ======================================================== -->
+
+  <section id="pledge" class="py-20 bg-parchment-200/50">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+      <!-- Section Header -->
+
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+
+        <span class="text-xs font-bold font-display uppercase tracking-widest text-crimson">Không Gian Văn Hóa Hồ Chí
+          Minh Kỷ Nguyên Mới</span>
+
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-crimson-dark">Thế Hệ Trẻ Viết Tiếp Trang Sử Vàng</h2>
+
+        <div class="w-24 h-1 bg-gold mx-auto"></div>
+
+        <p class="text-xs sm:text-sm text-ink-soft">
+
+          Gửi lời hứa, cảm tưởng hoặc mục tiêu học tập, rèn luyện của bạn để lưu danh vào Không gian thi đua số của dự
+          án.
+
+        </p>
+
+      </div>
+
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+
+
+        <!-- Form Nhập Thông Điệp (lg:col-span-4) -->
+
+        <div class="lg:col-span-4 bg-white p-6 rounded-2xl gold-border shadow-lg space-y-4">
+
+          <div class="flex items-center space-x-2 pb-2 border-b border-parchment-200">
+
+            <i class="fa-solid fa-feather-pointed text-crimson"></i>
+
+            <h3 class="font-serif font-bold text-base text-ink">Gửi Lời Hứa Tri Ân</h3>
+
+          </div>
+
+
+          <form id="pledgeForm" onsubmit="submitPledge(event)" class="space-y-3 text-xs">
+
+            <div>
+
+              <label class="block font-semibold text-ink-soft mb-1">Họ và tên của bạn:</label>
+
+              <input type="text" id="pledgeName" required placeholder="Ví dụ: Nguyễn Minh An"
+                class="w-full px-3 py-2 rounded-lg border border-parchment-300 focus:outline-none focus:ring-1 focus:ring-gold bg-parchment-50">
+
+            </div>
+
+
+            <div>
+
+              <label class="block font-semibold text-ink-soft mb-1">Đơn vị / Trường học / Tỉnh thành:</label>
+
+              <input type="text" id="pledgeUnit" required placeholder="Ví dụ: ĐH Khoa học Xã hội & Nhân văn, TP.HCM"
+                class="w-full px-3 py-2 rounded-lg border border-parchment-300 focus:outline-none focus:ring-1 focus:ring-gold bg-parchment-50">
+
+            </div>
+
+
+            <div>
+
+              <label class="block font-semibold text-ink-soft mb-1">Lời hứa / Thông điệp cống hiến:</label>
+
+              <textarea id="pledgeMessage" required rows="4"
+                placeholder="Viết thông điệp của bạn tiếp nối lý tưởng của Bác trong kỷ nguyên số..."
+                class="w-full px-3 py-2 rounded-lg border border-parchment-300 focus:outline-none focus:ring-1 focus:ring-gold bg-parchment-50"></textarea>
+
+            </div>
+
+
+            <button type="submit"
+              class="w-full py-2.5 rounded-lg bg-crimson hover:bg-crimson-dark text-gold-light font-display font-bold text-xs tracking-wider transition uppercase shadow">
+
+              Khắc Ghi Lên Bức Tường <i class="fa-solid fa-paper-plane ml-1"></i>
+
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <!-- Bức Tường Lời Hứa (lg:col-span-8) -->
+
+        <div class="lg:col-span-8">
+
+          <div class="flex items-center justify-between mb-4">
+
+            <span class="text-xs font-semibold text-ink-soft">Thông điệp từ các bạn trẻ trên cả nước:</span>
+
+            <span id="pledgeCount" class="text-xs px-2.5 py-0.5 rounded-full bg-crimson text-gold font-bold">4 Lời
+              Hứa</span>
+
+          </div>
+
+
+          <div id="pledgeWallGrid" class="grid sm:grid-cols-2 gap-4 max-h-[520px] overflow-y-auto pr-1">
+
+            <!-- Render danh sách thẻ bưu thiếp bằng JS -->
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================== -->
+
+  <!-- 7. FOOTER: BẢN QUYỀN BÀI THI & NGUỒN TƯ LIỆU CHÍNH THỐNG   -->
+
+  <!-- ======================================================== -->
+
+  <footer class="bg-crimson-deep text-parchment-200 text-xs py-12 border-t-2 border-gold/40">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 items-start">
+
+
+
+      <!-- Cột 1: Thông tin dự án -->
+
+      <div class="space-y-3">
+
+        <div class="flex items-center space-x-2">
+
+          <div class="w-8 h-8 rounded-full border border-gold flex items-center justify-center bg-crimson">
+
+            <i class="fa-solid fa-star text-gold text-xs"></i>
+
+          </div>
+
+          <span class="font-display font-bold text-sm text-white">DẤU CHÂN THỜI ĐẠI</span>
+
+        </div>
+
+        <p class="text-parchment-300 leading-relaxed text-[11px]">
+
+          Sản phẩm tương tác đa phương tiện (Interactive Web Companion) thiết kế đồng hành cùng bài dự thi thiết kế
+          Infographic về Chủ tịch Hồ Chí Minh.
+
+        </p>
+
+        <p class="text-[10px] text-gold-bronze">
+
+          Bản quyền thuộc về Nhóm tác giả dự thi © 2026.
+
+        </p>
+
+      </div>
+
+
+      <!-- Cột 2: Nguồn tư liệu khoa học chuẩn mực -->
+
+      <div class="space-y-2">
+
+        <h4 class="font-display font-bold text-gold text-xs tracking-wider uppercase">Nguồn Tư Liệu Chính Thống</h4>
+
+        <ul class="space-y-1.5 text-[11px] text-parchment-300">
+
+          <li class="flex items-center space-x-1.5">
+
+            <i class="fa-solid fa-landmark text-gold text-[10px]"></i>
+
+            <span>Bảo tàng Hồ Chí Minh (Hà Nội)</span>
+
+          </li>
+
+          <li class="flex items-center space-x-1.5">
+
+            <i class="fa-solid fa-ship text-gold text-[10px]"></i>
+
+            <span>Bảo tàng Hồ Chí Minh - Chi nhánh TP.HCM (Bến Nhà Rồng)</span>
+
+          </li>
+
+          <li class="flex items-center space-x-1.5">
+
+            <i class="fa-solid fa-book text-gold text-[10px]"></i>
+
+            <span>Hồ Chí Minh Toàn Tập - NXB Chính trị quốc gia Sự thật</span>
+
+          </li>
+
+          <li class="flex items-center space-x-1.5">
+
+            <i class="fa-solid fa-feather text-gold text-[10px]"></i>
+
+            <span>Tủ sách Di sản Hồ Chí Minh - NXB Trẻ</span>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Cột 3: Tích hợp mã QR kết nối Infographic -->
+
+      <div class="p-4 rounded-xl bg-crimson-dark border border-gold/30 flex items-center space-x-4">
+
+        <div class="w-20 h-20 bg-white p-1 rounded-lg flex items-center justify-center shadow-md">
+
+          <!-- Mô phỏng SVG QR Code -->
+
+          <svg class="w-full h-full text-crimson-deep" viewBox="0 0 24 24" fill="currentColor">
+
+            <path
+              d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14 0h2v2h-2v-2zm-4-2h2v2h-2v-2zm2 4h2v4h-2v-4zm2-2h4v2h-4v-2zm-6 2h2v2h-2v-2zm6 2h2v2h-2v-2zM6 6h2v2H6V6zm12 0h2v2h-2V6zM6 18h2v2H6v-2z">
+            </path>
+
+          </svg>
+
+        </div>
+
+        <div class="space-y-1">
+
+          <span class="block font-bold text-xs text-white">Quét Xem Trên Điện Thoại</span>
+
+          <p class="text-[10px] text-parchment-300">
+
+            Mã QR đồng bộ in trực tiếp trên áp phích Infographic khổ A0/A1 để mở trang web thực tế.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================== -->
+
+  <!-- JAVASCRIPT: LOGIC TƯƠNG TÁC, BẢN ĐỒ, HIỆN VẬT & ÂM THANH  -->
+
+  <!-- ======================================================== -->
+
+  <script>
+// Hàm Đóng/Mở các hộp nội dung Timeline
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      
+      // Đóng tất cả các hộp khác đang mở
+      document.querySelectorAll('[id^="acc"]').forEach(box => {
+        if (box.id !== id && !box.classList.contains('hidden')) {
+          box.classList.add('hidden');
+          document.getElementById('icon-' + box.id).classList.remove('rotate-180');
+        }
+      });
+
+      // Bật/tắt hộp hiện tại
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    /* ==========================================================
+
+       A. WEB AUDIO API SYNTHESIS (ÂM THANH MÔI TRƯỜNG BIỂN & MÁY CHỮ)
+
+       ========================================================== */
+
+    let audioCtx = null;
+
+    let isAudioPlaying = false;
+
+    let waveNoiseNode = null;
+
+    let waveGainNode = null;
+
+    let waveFilterNode = null;
+
+
+    function initAudioContext() {
+
+      if (!audioCtx) {
+
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+
+        audioCtx = new AudioContext();
+
+      }
+
+    }
+
+
+    // Bật/tắt âm thanh sóng biển Bến Nhà Rồng rì rào
+
+    function toggleAudio() {
+
+      initAudioContext();
+
+      if (audioCtx.state === 'suspended') {
+
+        audioCtx.resume();
+
+      }
+
+
+      const icon = document.getElementById('audioIcon');
+
+      const text = document.getElementById('audioText');
+
+
+      if (!isAudioPlaying) {
+
+        startSeaAmbient();
+
+        isAudioPlaying = true;
+
+        icon.className = "fa-solid fa-volume-high text-gold animate-pulse";
+
+        text.innerText = "Đang phát âm thanh";
+
+      } else {
+
+        stopSeaAmbient();
+
+        isAudioPlaying = false;
+
+        icon.className = "fa-solid fa-volume-xmark text-gold";
+
+        text.innerText = "Âm thanh bảo tàng";
+
+      }
+
+    }
+
+
+    function startSeaAmbient() {
+
+      if (!audioCtx) return;
+
+      // Tạo tiếng ồn trắng (White noise)
+
+      const bufferSize = audioCtx.sampleRate * 2;
+
+      const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+
+      const output = noiseBuffer.getChannelData(0);
+
+      for (let i = 0; i < bufferSize; i++) {
+
+        output[i] = Math.random() * 2 - 1;
+
+      }
+
+
+      waveNoiseNode = audioCtx.createBufferSource();
+
+      waveNoiseNode.buffer = noiseBuffer;
+
+      waveNoiseNode.loop = true;
+
+
+      // Bộ lọc lowpass lọc dải tần để tạo âm thanh nước
+
+      waveFilterNode = audioCtx.createBiquadFilter();
+
+      waveFilterNode.type = 'lowpass';
+
+      waveFilterNode.frequency.setValueAtTime(320, audioCtx.currentTime);
+
+
+      waveGainNode = audioCtx.createGain();
+
+      waveGainNode.gain.setValueAtTime(0.04, audioCtx.currentTime);
+
+
+      // Dao động điều chế độ lớn âm thanh theo nhịp sóng vỗ
+
+      const lfo = audioCtx.createOscillator();
+
+      lfo.frequency.setValueAtTime(0.15, audioCtx.currentTime); // Nhịp sóng 6.6 giây
+
+      const lfoGain = audioCtx.createGain();
+
+      lfoGain.gain.setValueAtTime(0.03, audioCtx.currentTime);
+
+      lfo.connect(lfoGain);
+
+      lfoGain.connect(waveGainNode.gain);
+
+      lfo.start();
+
+
+      waveNoiseNode.connect(waveFilterNode);
+
+      waveFilterNode.connect(waveGainNode);
+
+      waveGainNode.connect(audioCtx.destination);
+
+      waveNoiseNode.start();
+
+    }
+
+
+    function stopSeaAmbient() {
+
+      if (waveNoiseNode) {
+
+        try { waveNoiseNode.stop(); } catch (e) { }
+
+        waveNoiseNode.disconnect();
+
+        waveNoiseNode = null;
+
+      }
+
+    }
+
+
+    // Âm thanh máy chữ lách cách
+
+    function playTypewriterClickSound() {
+
+      try {
+
+        initAudioContext();
+
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const osc = audioCtx.createOscillator();
+
+        const gain = audioCtx.createGain();
+
+        osc.type = 'triangle';
+
+        osc.frequency.setValueAtTime(800 + Math.random() * 400, audioCtx.currentTime);
+
+        gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.06);
+
+        osc.connect(gain);
+
+        gain.connect(audioCtx.destination);
+
+        osc.start();
+
+        osc.stop(audioCtx.currentTime + 0.07);
+
+      } catch (e) { }
+
+    }
+
+
+    // Tiếng chuông gõ dòng máy chữ (Ding!)
+
+    function playTypewriterBellSound() {
+
+      try {
+
+        initAudioContext();
+
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const osc = audioCtx.createOscillator();
+
+        const gain = audioCtx.createGain();
+
+        osc.type = 'sine';
+
+        osc.frequency.setValueAtTime(1800, audioCtx.currentTime);
+
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
+
+        osc.connect(gain);
+
+        gain.connect(audioCtx.destination);
+
+        osc.start();
+
+        osc.stop(audioCtx.currentTime + 0.85);
+
+      } catch (e) { }
+
+    }
+/* ==========================================================
+       C. CANVAS BẢN ĐỒ THẾ GIỚI CỔ ĐIỂN (KHỞI TẠO TRƯỚC)
+       ========================================================== */
+    const canvas = document.getElementById('routeCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * window.devicePixelRatio;
+      canvas.height = rect.height * window.devicePixelRatio;
+      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      drawMapCanvas();
+    }
+    window.addEventListener('resize', resizeCanvas);
+
+
+/* ==========================================================
+       B. DỮ LIỆU HẢI TRÌNH TOÀN TUYẾN (KHỚP 100% VỚI BẢN ĐỒ NỀN)
+       ========================================================== */
+    const FULL_ROUTE_COORDS = [
+      { x: 0.965, y: 0.628, name: "Sài Gòn" },
+      { x: 0.785, y: 0.628, name: "Colombo" },
+      { x: 0.638, y: 0.608, name: "Djibouti" },
+      { x: 0.586, y: 0.485, name: "Port Said" },
+      { x: 0.478, y: 0.422, name: "Marseille" },
+      { x: 0.463, y: 0.375, name: "Paris" },
+      { x: 0.448, y: 0.355, name: "Le Havre" },
+      { x: 0.435, y: 0.315, name: "London" },
+      { x: 0.075, y: 0.445, name: "New York" },
+      { x: 0.098, y: 0.638, name: "Caribe" },
+      { x: 0.210, y: 0.812, name: "Rio de Janeiro" },
+      { x: 0.150, y: 0.915, name: "Buenos Aires" },
+      { x: 0.435, y: 0.315, name: "London" }, // Vòng lại Châu Âu
+      { x: 0.463, y: 0.375, name: "Paris" },
+      { x: 0.585, y: 0.280, name: "Moscow" },
+      { x: 0.685, y: 0.310, name: "Yekaterinburg" },
+      { x: 0.942, y: 0.278, name: "Vladivostok" },
+      { x: 0.905, y: 0.420, name: "Bắc Kinh" },
+      { x: 0.920, y: 0.485, name: "Quảng Châu" },
+      { x: 0.945, y: 0.555, name: "Pác Bó" }
+    ];
+
+    // Canvas vẽ tuyến đường đè lên ảnh
+    function drawMapCanvas(progress = 1) {
+      if (!canvas || !ctx) return;
+      const w = canvas.getBoundingClientRect().width;
+      const h = canvas.getBoundingClientRect().height;
+      if (!w || !h) return;
+      
+      ctx.clearRect(0, 0, w, h);
+
+      // Hàm vẽ đường cong Bezier nối các điểm
+      const drawCurvedRoute = (pts, prog) => {
+        if (pts.length < 2) return;
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x * w, pts[0].y * h);
+
+        let totalLength = 0;
+        const segments = [];
+        for (let i = 0; i < pts.length - 1; i++) {
+          const p1 = { x: pts[i].x * w, y: pts[i].y * h };
+          const p2 = { x: pts[i + 1].x * w, y: pts[i + 1].y * h };
+          
+          const midX = (p1.x + p2.x) / 2;
+          const midY = (p1.y + p2.y) / 2;
+          const dx = p2.x - p1.x;
+          const dy = p2.y - p1.y;
+          const cpX = midX - dy * 0.15; 
+          const cpY = midY + dx * 0.15;
+          
+          const len = Math.hypot(dx, dy) * 1.1;
+          segments.push({ p1, p2, cpX, cpY, len });
+          totalLength += len;
+        }
+
+        ctx.strokeStyle = "#8B1E1E"; // Màu đỏ thẫm
+        ctx.lineWidth = 3; // Nét vẽ đậm rõ ràng
+        ctx.setLineDash([totalLength]);
+        ctx.lineDashOffset = totalLength * (1 - prog);
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = "rgba(212, 175, 55, 0.8)"; 
+
+        segments.forEach(seg => {
+          ctx.quadraticCurveTo(seg.cpX, seg.cpY, seg.p2.x, seg.p2.y);
+        });
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.shadowBlur = 0;
+      };
+
+      drawCurvedRoute(FULL_ROUTE_COORDS, progress);
+
+      // Điểm sáng các vị trí
+      const pointCountToShow = Math.max(1, Math.floor(progress * FULL_ROUTE_COORDS.length));
+      
+      // Bộ lọc để không in tên trùng lặp (ví dụ Paris, London đi qua 2 lần)
+      const printedNames = new Set();
+
+      for (let i = 0; i < pointCountToShow; i++) {
+        const pt = FULL_ROUTE_COORDS[i];
+        const px = pt.x * w;
+        const py = pt.y * h;
+        
+        // Vòng hào quang vàng tỏa ra
+        ctx.beginPath();
+        const grad = ctx.createRadialGradient(px, py, 2, px, py, 14);
+        grad.addColorStop(0, "rgba(212, 175, 55, 1)");
+        grad.addColorStop(1, "rgba(212, 175, 55, 0)");
+        ctx.fillStyle = grad;
+        ctx.arc(px, py, 14, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Chấm đỏ trung tâm
+        ctx.beginPath();
+        ctx.arc(px, py, 4.5, 0, Math.PI * 2);
+        ctx.fillStyle = "#8B1E1E";
+        ctx.fill();
+        ctx.strokeStyle = "#F5E7B2";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        // In tên nếu chưa in
+        if (!printedNames.has(pt.name)) {
+            ctx.fillStyle = "#1E1B18";
+            ctx.font = "bold 13px 'Be Vietnam Pro', sans-serif";
+            ctx.shadowBlur = 4;
+            ctx.shadowColor = "rgba(255, 255, 255, 1)";
+            
+            let textOffsetX = 12;
+            let textOffsetY = 4;
+            
+            // Căn chỉnh chữ thủ công chống đè nhau
+            if (pt.name === "London") { textOffsetX = -55; textOffsetY = -8; }
+            if (pt.name === "Paris") { textOffsetX = 12; textOffsetY = 15; }
+            if (pt.name === "Le Havre") { textOffsetX = -65; textOffsetY = 4; }
+            if (pt.name === "Marseille") { textOffsetX = 12; textOffsetY = 8; }
+            if (pt.name === "Quảng Châu") { textOffsetX = -80; textOffsetY = 5; }
+            if (pt.name === "Pác Bó") { textOffsetX = -50; textOffsetY = -8; }
+            if (pt.name === "Sài Gòn") { textOffsetX = 12; textOffsetY = 15; }
+            if (pt.name === "New York") { textOffsetX = -20; textOffsetY = -15; }
+            if (pt.name === "Bắc Kinh") { textOffsetX = 12; textOffsetY = -5; }
+            
+            ctx.fillText(pt.name, px + textOffsetX, py + textOffsetY);
+            ctx.shadowBlur = 0;
+            printedNames.add(pt.name);
+        }
+      }
+    }
+
+    let isAnimatingRoute = false;
+    async function playRouteAnimation() {
+      if (isAnimatingRoute) return;
+      isAnimatingRoute = true;
+      const btn = document.querySelector('button[onclick="playRouteAnimation()"]');
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-[10px]"></i><span>Đang tái hiện...</span>';
+        btn.classList.add('opacity-70', 'pointer-events-none');
+      }
+
+      await new Promise(resolve => {
+        let step = 0;
+        const totalSteps = 400; // Tốc độ mượt
+        const interval = setInterval(() => {
+          step++;
+          drawMapCanvas(step / totalSteps);
+          
+          if (step >= totalSteps) {
+            clearInterval(interval);
+            resolve();
+          }
+        }, 20);
+      });
+
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-play text-[10px]"></i><span>Vẽ Lại Hải Trình</span>';
+        btn.classList.remove('opacity-70', 'pointer-events-none');
+      }
+      isAnimatingRoute = false;
+    }    /* ==========================================================
+
+       E. PHÒNG THỰC HÀNH SỐ (PRINTING, TYPEWRITER, QUIZ)
+
+       ========================================================== */
+
+    function switchWorkshopTab(tab) {
+
+      document.querySelectorAll('.workshop-tab-btn').forEach(b => {
+
+        b.classList.remove('active', 'bg-crimson', 'text-white');
+
+        b.classList.add('text-ink-soft');
+
+      });
+
+      document.querySelectorAll('.workshop-content').forEach(c => c.classList.add('hidden'));
+
+
+      const activeBtn = document.getElementById(`tabBtn-${tab}`);
+
+      const activeContent = document.getElementById(`workshop-${tab}`);
+
+      if (activeBtn && activeContent) {
+
+        activeBtn.classList.add('active', 'bg-crimson', 'text-white');
+
+        activeBtn.classList.remove('text-ink-soft');
+
+        activeContent.classList.remove('hidden');
+
+      }
+
+
+      if (tab === 'quiz') {
+
+        loadQuiz();
+
+      }
+
+    }
+
+
+    // 1. Trải nghiệm In báo Việt Nam Độc Lập 1941
+
+    let isPrinted = false;
+
+    function inkAndPrintPaper() {
+
+      if (isPrinted) return;
+
+      isPrinted = true;
+
+
+      const roller = document.getElementById('inkRoller');
+
+      const content = document.getElementById('newspaperContent');
+
+      const placeholder = document.getElementById('newspaperPlaceholder');
+
+
+      roller.style.opacity = '1';
+
+      roller.style.top = '100%';
+
+
+      setTimeout(() => {
+
+        placeholder.classList.add('hidden');
+
+        content.classList.remove('opacity-10');
+
+        content.classList.add('opacity-100');
+
+        roller.style.opacity = '0';
+
+      }, 700);
+
+    }
+
+
+    function resetPrint() {
+
+      isPrinted = false;
+
+      const roller = document.getElementById('inkRoller');
+
+      const content = document.getElementById('newspaperContent');
+
+      const placeholder = document.getElementById('newspaperPlaceholder');
+
+
+      roller.style.transition = 'none';
+
+      roller.style.top = '-48px';
+
+      roller.style.opacity = '0';
+
+      setTimeout(() => {
+
+        roller.style.transition = 'all 1s ease-in-out';
+
+      }, 50);
+
+
+      content.classList.remove('opacity-100');
+
+      content.classList.add('opacity-10');
+
+      placeholder.classList.remove('hidden');
+
+    }
+
+
+    // 2. Gõ máy chữ cơ học thơ Bác
+
+    const POEMS = {
+
+      ngamtrang: {
+
+        title: "Ngắm Trăng (Vọng Nguyệt) - 1942",
+
+        text: "Ngục trung vô tửu diệc vô hoa,\nĐối thử lương tiêu nại nhược hà?\nNhân hướng song tiền khán minh nguyệt,\nNguyệt tòng song khích khán thi gia."
+
+      },
+
+      diduong: {
+
+        title: "Đi Đường (Tẩu Lộ) - 1942",
+
+        text: "Tau lo tai tri tau lo nan\nTrung san chi ngoai huu trung san\nTrung san dang dao cao phong hau\nVan ly du do co mien gian"
+
+      },
+
+      nguyentieu: {
+
+        title: "Rằm Tháng Giêng (Nguyên Tiêu) - 1948",
+
+        text: "Kim da nguyen tieu nguyet chinh vien\nXuan giang xuan thuy tiep xuan thien\nYen ba tham xu dam quan su\nDa ban quy lai nguyet man thuyen"
+
+      }
+
+    };
+
+
+    let currentPoemKey = 'ngamtrang';
+
+    let typedPoemIndex = 0;
+
+
+    function changePoem() {
+
+      currentPoemKey = document.getElementById('poemSelect').value;
+
+      typedPoemIndex = 0;
+
+      document.getElementById('typewriterTarget').innerText = POEMS[currentPoemKey].title;
+
+      document.getElementById('typewriterOutput').innerText = "";
+
+    }
+
+
+    function pressKey(char) {
+
+      playTypewriterClickSound();
+
+      advanceTypewriter();
+
+    }
+
+
+    function pressSpace() {
+
+      playTypewriterClickSound();
+
+      advanceTypewriter();
+
+    }
+
+
+    function advanceTypewriter() {
+
+      const fullText = POEMS[currentPoemKey].text;
+
+      if (typedPoemIndex < fullText.length) {
+
+        typedPoemIndex++;
+
+        const currentTyped = fullText.substring(0, typedPoemIndex);
+
+        document.getElementById('typewriterOutput').innerText = currentTyped;
+
+
+        // Nếu chạm dấu xuống dòng thì rung chuông
+
+        if (fullText[typedPoemIndex - 1] === '\n') {
+
+          playTypewriterBellSound();
+
+        }
+
+      } else {
+
+        playTypewriterBellSound();
+
+      }
+
+    }
+
+
+    function autoFillPoem() {
+
+      typedPoemIndex = 0;
+
+      const fullText = POEMS[currentPoemKey].text;
+
+      const interval = setInterval(() => {
+
+        if (typedPoemIndex < fullText.length) {
+
+          typedPoemIndex++;
+
+          document.getElementById('typewriterOutput').innerText = fullText.substring(0, typedPoemIndex);
+
+          if (typedPoemIndex % 3 === 0) playTypewriterClickSound();
+
+          if (fullText[typedPoemIndex - 1] === '\n') playTypewriterBellSound();
+
+        } else {
+
+          clearInterval(interval);
+
+          playTypewriterBellSound();
+
+        }
+
+      }, 50);
+
+    }
+
+
+    // Lắng nghe gõ bàn phím thật
+
+    window.addEventListener('keydown', (e) => {
+
+      const activeTab = document.querySelector('.workshop-tab-btn.active');
+
+      if (activeTab && activeTab.id === 'tabBtn-typewriter') {
+
+        if (e.key.length === 1 || e.key === 'Enter' || e.key === ' ') {
+
+          playTypewriterClickSound();
+
+          advanceTypewriter();
+
+        }
+
+      }
+
+    });
+
+
+    // 3. Mini-quiz 5 câu hỏi lịch sử
+
+    const QUIZ_QUESTIONS = [
+
+      {
+
+        q: "Bác Hồ rời bến cảng Sài Gòn ra đi tìm đường cứu nước vào ngày tháng năm nào?",
+
+        options: ["05/06/1911", "19/05/1890", "03/02/1930", "02/09/1945"],
+
+        correct: 0,
+
+        explain: "Ngày 5 tháng 6 năm 1911, trên con tàu Amiral Latouche-Tréville, Người thanh niên Nguyễn Tất Thành mang tên Văn Ba đã rời Tổ quốc ra đi tìm đường cứu nước."
+
+      },
+
+      {
+
+        q: "Tác phẩm lý luận chính trị kinh điển nào của Người được xuất bản năm 1927 tại Quảng Châu?",
+
+        options: ["Bản án chế độ thực dân Pháp", "Đường Kách mệnh", "Nhật ký trong tù", "Tuyên ngôn Độc lập"],
+
+        correct: 1,
+
+        explain: "Tác phẩm 'Đường Kách mệnh' (1927) tập hợp các bài giảng huấn luyện cán bộ của Nguyễn Ái Quốc tại Quảng Châu, vạch rõ con đường giải phóng dân tộc."
+
+      },
+
+      {
+
+        q: "Ngày 28/01/1941, sau 30 năm bôn ba, Bác Hồ trở về Tổ quốc qua cột mốc nào tại Cao Bằng?",
+
+        options: ["Cột mốc 0", "Cột mốc 108 (Pác Bó)", "Cột mốc 79", "Cột mốc 92"],
+
+        correct: 1,
+
+        explain: "Ngày 28/01/1941 (mùng 2 Tết Tân Tỵ), Người đặt chân qua cột mốc 108 tại Pác Bó (Hà Quảng, Cao Bằng) trong niềm xúc động thiêng liêng."
+
+      },
+
+      {
+
+        q: "Bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa được Người đọc vào ngày nào?",
+
+        options: ["19/08/1945", "02/09/1945", "10/10/1954", "30/04/1975"],
+
+        correct: 1,
+
+        explain: "Ngày 2 tháng 9 năm 1945, tại Quảng trường Ba Đình lịch sử, Chủ tịch Hồ Chí Minh thay mặt Chính phủ lâm thời đọc bản Tuyên ngôn Độc lập bất hủ."
+
+      },
+
+      {
+
+        q: "Năm 1990, tổ chức quốc tế uy tín nào đã ra Nghị quyết tôn vinh Chủ tịch Hồ Chí Minh?",
+
+        options: ["UNESCO", "UNICEF", "ASEAN", "Interpol"],
+
+        correct: 0,
+
+        explain: "Khóa họp Đại hội đồng UNESCO lần thứ 24 đã thông qua Nghị quyết vinh danh Chủ tịch Hồ Chí Minh là 'Anh hùng giải phóng dân tộc và Nhà văn hóa kiệt xuất của Việt Nam'."
+
+      }
+
+    ];
+
+
+    let currentQuizIndex = 0;
+
+    let quizScore = 0;
+
+
+    function loadQuiz() {
+
+      currentQuizIndex = 0;
+
+      quizScore = 0;
+
+      document.getElementById('quizScore').innerText = "0/5";
+
+      document.getElementById('certificateContainer').classList.add('hidden');
+
+      document.getElementById('quizContainer').classList.remove('hidden');
+
+      renderQuestion();
+
+    }
+
+
+    function renderQuestion() {
+
+      const qBox = document.getElementById('quizQuestionBox');
+
+      const item = QUIZ_QUESTIONS[currentQuizIndex];
+
+
+      qBox.innerHTML = `
+
+        <div class="p-4 bg-parchment-100 rounded-xl border border-gold/40">
+
+          <span class="text-xs font-bold text-crimson uppercase tracking-wider">Câu hỏi ${currentQuizIndex + 1} / 5</span>
+
+          <p class="font-serif font-bold text-sm sm:text-base text-ink mt-1">${item.q}</p>
+
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-3" id="quizOptions">
+
+          ${item.options.map((opt, i) => `
+
+            <button onclick="checkAnswer(${i})" class="quiz-opt-btn p-3 rounded-xl border border-parchment-300 text-left text-xs font-semibold hover:border-crimson hover:bg-parchment-50 transition flex items-center justify-between">
+
+              <span>${String.fromCharCode(65 + i)}. ${opt}</span>
+
+              <i class="fa-regular fa-circle text-gold-dark text-xs"></i>
+
+            </button>
+
+          `).join('')}
+
+        </div>
+
+        <div id="quizFeedback" class="hidden p-3 rounded-lg text-xs leading-relaxed"></div>
+
+      `;
+
+    }
+
+
+    function checkAnswer(chosenIndex) {
+
+      const item = QUIZ_QUESTIONS[currentQuizIndex];
+
+      const feedback = document.getElementById('quizFeedback');
+
+      const buttons = document.querySelectorAll('.quiz-opt-btn');
+
+
+      buttons.forEach(btn => btn.disabled = true);
+
+
+      if (chosenIndex === item.correct) {
+
+        quizScore++;
+
+        document.getElementById('quizScore').innerText = `${quizScore}/5`;
+
+        buttons[chosenIndex].classList.add('bg-emerald-50', 'border-emerald-600', 'text-emerald-800');
+
+        feedback.className = "p-3 rounded-lg text-xs bg-emerald-50 text-emerald-900 border border-emerald-200 block";
+
+        feedback.innerHTML = `<strong>Chính xác!</strong> ${item.explain}`;
+
+      } else {
+
+        buttons[chosenIndex].classList.add('bg-rose-50', 'border-rose-600', 'text-rose-800');
+
+        buttons[item.correct].classList.add('bg-emerald-50', 'border-emerald-600', 'text-emerald-800');
+
+        feedback.className = "p-3 rounded-lg text-xs bg-rose-50 text-rose-900 border border-rose-200 block";
+
+        feedback.innerHTML = `<strong>Chưa đúng!</strong> ${item.explain}`;
+
+      }
+
+
+      setTimeout(() => {
+
+        if (currentQuizIndex < QUIZ_QUESTIONS.length - 1) {
+
+          currentQuizIndex++;
+
+          renderQuestion();
+
+        } else {
+
+          showCertificate();
+
+        }
+
+      }, 2200);
+
+    }
+
+
+    function showCertificate() {
+
+      document.getElementById('quizContainer').classList.add('hidden');
+
+      document.getElementById('certificateContainer').classList.remove('hidden');
+
+      renderCertificate();
+
+    }
+
+
+    function restartQuiz() {
+
+      loadQuiz();
+
+    }
+
+
+    function renderCertificate() {
+
+      const canvas = document.getElementById('certCanvas');
+
+      const ctx = canvas.getContext('2d');
+
+      const name = document.getElementById('certNameInput').value.trim() || "Thế Hệ Trẻ Việt Nam";
+
+
+      // Nền bằng khen cổ điển
+
+      ctx.fillStyle = "#FAF6ED";
+
+      ctx.fillRect(0, 0, 600, 400);
+
+
+      // Khung viền kép hoàng kim
+
+      ctx.strokeStyle = "#8B1E1E";
+
+      ctx.lineWidth = 6;
+
+      ctx.strokeRect(15, 15, 570, 370);
+
+
+      ctx.strokeStyle = "#D4AF37";
+
+      ctx.lineWidth = 2;
+
+      ctx.strokeRect(22, 22, 556, 356);
+
+
+      // Tiêu đề
+
+      ctx.fillStyle = "#8B1E1E";
+
+      ctx.font = "bold 20px 'Playfair Display', serif";
+
+      ctx.textAlign = "center";
+
+      ctx.fillText("CHỨNG NHẬN ĐIỆN TỬ DI SẢN", 300, 75);
+
+
+      ctx.fillStyle = "#C5A059";
+
+      ctx.font = "italic 13px 'Merriweather', serif";
+
+      ctx.fillText("Cuộc Thi Thiết Kế Infographic Lịch Sử & Triển Lãm Số", 300, 105);
+
+
+      // Nội dung vinh danh
+
+      ctx.fillStyle = "#1E1B18";
+
+      ctx.font = "14px 'Be Vietnam Pro', sans-serif";
+
+      ctx.fillText("Chứng nhận bạn:", 300, 150);
+
+
+      ctx.fillStyle = "#8B1E1E";
+
+      ctx.font = "bold 24px 'Playfair Display', serif";
+
+      ctx.fillText(name.toUpperCase(), 300, 195);
+
+
+      ctx.fillStyle = "#3B3632";
+
+      ctx.font = "12px 'Be Vietnam Pro', sans-serif";
+
+      ctx.fillText(`Đã xuất sắc hoàn thành Thử thách Tìm hiểu Di sản Hồ Chí Minh với điểm số: ${quizScore}/5`, 300, 235);
+
+      ctx.fillText("Lan tỏa khát vọng độc lập - tự cường và tiếp bước trang sử vàng dân tộc.", 300, 255);
+
+
+      // Con dấu bảo tàng
+
+      ctx.save();
+
+      ctx.translate(450, 310);
+
+      ctx.rotate(-0.1);
+
+      ctx.strokeStyle = "#8B1E1E";
+
+      ctx.lineWidth = 3;
+
+      ctx.beginPath();
+
+      ctx.arc(0, 0, 35, 0, Math.PI * 2);
+
+      ctx.stroke();
+
+      ctx.fillStyle = "#8B1E1E";
+
+      ctx.font = "bold 8px 'Playfair Display'";
+
+      ctx.fillText("DI SẢN HỒ CHÍ MINH", 0, -8);
+
+      ctx.fillText("★ CHỨNG NHẬN ★", 0, 4);
+
+      ctx.fillText("NĂM 2026", 0, 16);
+
+      ctx.restore();
+
+
+      // Ngày cấp
+
+      ctx.fillStyle = "#6E6760";
+
+      ctx.font = "italic 11px 'Merriweather', serif";
+
+      ctx.textAlign = "left";
+
+      ctx.fillText("Ngày chứng nhận: 03/11/2026", 45, 345);
+
+    }
+
+
+    /* ==========================================================
+
+       F. BỨC TƯỜNG THẾ HỆ TRẺ VIẾT TIẾP TRANG SỬ (LOCALSTORAGE)
+
+       ========================================================== */
+
+    const DEFAULT_PLEDGES = [
+
+      {
+
+        name: "Lê Vy Khanh",
+
+        unit: "ĐH Khoa học Tự nhiên - ĐHQG TP.HCM",
+
+        message: "Học tập tinh thần tự học ngoại ngữ và ý chí không lùi bước của Bác để làm chủ công nghệ trí tuệ nhân tạo, phụng sự quê hương.",
+
+        date: "02/11/2026"
+
+      },
+
+      {
+
+        name: "Hồ Quỳnh Hương",
+
+        unit: "Trường THPT Chuyên Quốc Học Huế",
+
+        message: "Tự hào được học tập dưới mái trường nơi Bác từng theo học. Nguyện rèn đức, luyện tài, đưa hình ảnh Việt Nam tự tin vươn ra thế giới.",
+
+        date: "01/11/2026"
+
+      },
+
+      {
+
+        name: "Nguyễn Ngọc Minh",
+
+        unit: "Thành Đoàn TP. Hồ Chí Minh",
+
+        message: "Xây dựng Không gian văn hóa Hồ Chí Minh trong từng hành động nhỏ mỗi ngày: Yêu thương đồng bào, trung thực, dám nghĩ dám làm.",
+
+        date: "29/10/2026"
+
+      },
+
+      {
+
+        name: "Triệu Thị Trúc Giang",
+
+        unit: "Học viện Ngoại giao, Hà Nội",
+
+        message: "Vận dụng nghệ thuật ngoại giao 'Dĩ bất biến, ứng vạn biến' của Người để bảo vệ chủ quyền và nâng cao vị thế đất nước trên trường quốc tế.",
+
+        date: "28/10/2026"
+
+      }
+
+    ];
+
+
+    function getPledges() {
+
+      const stored = localStorage.getItem('hochiminh_youth_pledges');
+
+      return stored ? JSON.parse(stored) : DEFAULT_PLEDGES;
+
+    }
+
+
+    function renderPledges() {
+
+      const pledges = getPledges();
+
+      const grid = document.getElementById('pledgeWallGrid');
+
+      grid.innerHTML = '';
+
+      document.getElementById('pledgeCount').innerText = `${pledges.length} Lời Hứa`;
+
+
+      pledges.forEach(item => {
+
+        const card = document.createElement('div');
+
+        card.className = "p-4 rounded-xl bg-parchment-50 border border-gold/40 shadow-sm flex flex-col justify-between space-y-3 relative overflow-hidden";
+
+        card.innerHTML = `
+
+          <div class="space-y-1.5">
+
+            <div class="flex items-center justify-between text-[11px] text-ink-light">
+
+              <span class="font-bold text-crimson font-serif">${item.name}</span>
+
+              <span class="font-mono text-[10px]">${item.date}</span>
+
+            </div>
+
+            <span class="block text-[10px] text-gold-dark font-medium">${item.unit}</span>
+
+            <p class="text-xs text-ink-soft font-serif italic leading-relaxed pt-1">"${item.message}"</p>
+
+          </div>
+
+          <div class="flex items-center justify-between pt-2 border-t border-parchment-200 text-[10px] text-ink-light">
+
+            <span class="flex items-center text-crimson space-x-1">
+
+              <i class="fa-solid fa-heart text-[10px]"></i>
+
+              <span>Thế hệ tiếp bước</span>
+
+            </span>
+
+            <span class="font-display text-[9px] text-gold-bronze uppercase">Di sản thời đại</span>
+
+          </div>
+
+        `;
+
+        grid.appendChild(card);
+
+      });
+
+    }
+
+
+    function submitPledge(e) {
+
+      e.preventDefault();
+
+      const name = document.getElementById('pledgeName').value.trim();
+
+      const unit = document.getElementById('pledgeUnit').value.trim();
+
+      const msg = document.getElementById('pledgeMessage').value.trim();
+
+
+      if (!name || !unit || !msg) return;
+
+
+      const newPledge = {
+
+        name: name,
+
+        unit: unit,
+
+        message: msg,
+
+        date: new Date().toLocaleDateString('vi-VN')
+
+      };
+
+
+      const pledges = getPledges();
+
+      pledges.unshift(newPledge);
+
+      localStorage.setItem('hochiminh_youth_pledges', JSON.stringify(pledges));
+
+
+      // Reset form
+
+      document.getElementById('pledgeForm').reset();
+
+      renderPledges();
+
+
+      // Thông báo nhẹ nhàng
+
+      const btn = e.target.querySelector('button[type="submit"]');
+
+      const originalText = btn.innerHTML;
+
+      btn.innerHTML = `<i class="fa-solid fa-check mr-1 text-gold"></i> Đã Gửi Thành Công!`;
+
+      btn.classList.add('bg-emerald-700');
+
+      setTimeout(() => {
+
+        btn.innerHTML = originalText;
+
+        btn.classList.remove('bg-emerald-700');
+
+      }, 2500);
+
+    }
+
+
+    // Toggle menu mobile
+
+    function toggleMobileMenu() {
+
+      const menu = document.getElementById('mobileMenu');
+
+      menu.classList.toggle('hidden');
+
+    }
+
+
+    /* ==========================================================
+
+       G. KHỞI TẠO HỆ THỐNG KHI TẢI TRANG
+
+       ========================================================== */
+
+    window.onload = function () {
+
+     drawMapCanvas(1);
+
+      changePoem();
+
+      renderPledges();
+
+      resizeCanvas();
+
+    };
+
+  </script>
+
+
+  <!-- CSS bổ trợ cho giao diện máy chữ & phím gõ -->
+
+  <style>
+    .type-key {
+
+      width: 32px;
+
+      height: 38px;
+
+      border-radius: 6px;
+
+      background: #2D2A26;
+
+      border: 1px solid #44403C;
+
+      color: #F5E7B2;
+
+      font-size: 11px;
+
+      font-weight: bold;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      box-shadow: 0 3px 0 #1C1917, 0 4px 6px rgba(0, 0, 0, 0.3);
+
+      cursor: pointer;
+
+      user-select: none;
+
+      transition: all 0.05s ease;
+
+    }
+
+    @media (min-width: 640px) {
+
+      .type-key {
+
+        width: 42px;
+
+        height: 44px;
+
+        font-size: 13px;
+
+      }
+
+    }
+
+    .type-key:active {
+
+      transform: translateY(2px);
+
+      box-shadow: 0 1px 0 #1C1917;
+
+      background: #44403C;
+
+    }
+  </style>
+
+</body>
+
+</html>
+
+
+
+
